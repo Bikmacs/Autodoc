@@ -23,21 +23,21 @@ namespace project_7
 
     public partial class MainWindow : Window
     {
-        public MainViewModel VM { get; set; } = new MainViewModel();
+        public MainViewModel vm { get; set; } = new MainViewModel();
 
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = VM;
+            DataContext = vm;
         }
         private void Button_Register(object sender, RoutedEventArgs e)
         {
-            VM.RegisterDoctor();
+            vm.RegisterDoctor();
         }
         private void Button_Login(object sender, RoutedEventArgs e)
         {
             int.TryParse(LoginText.Text, out int id);
-            VM.LoginDoctor(id, PasswordText.Password);
+            vm.LoginDoctor(id, PasswordText.Password);
         }
         private void Button_Add_User(object sender, RoutedEventArgs e)
         {
@@ -48,31 +48,23 @@ namespace project_7
                 ? DateOnly.FromDateTime(AddBirthday.SelectedDate.Value)
                 : DateOnly.FromDateTime(DateTime.Now);
 
-            VM.AddPatient(Name, LastName, MiddleName, birthday);
+            vm.AddPatient(Name, LastName, MiddleName, birthday);
         }
+
+        private void Button_Change_Patient(object sender, RoutedEventArgs e)
+        {
+            string changeName = Name.Text;
+            string changeLastName = LastName.Text;
+            string changeMiddleName = MiddleName.Text;
+            DateTime selectedDate = Birthday.SelectedDate ?? DateTime.Now;
+            DateOnly dateOnly = DateOnly.FromDateTime(selectedDate);
+            vm.ChangePatient(changeName, changeLastName, changeMiddleName, dateOnly);
+        }
+
         private void Button_Search_User(object sender, RoutedEventArgs e)
         {
             int.TryParse(SearchUser.Text, out int id);
-            VM.SearchPatient(id);
-        }
-
-        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            VM.CurrentDoctor.Password = ((PasswordBox)sender).Password;
-        }
-
-        private void ConfirmPasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            VM.CurrentDoctor.ConfirmPassword = ((PasswordBox)sender).Password;
-        }
-        private void Button_Save_Patient(object sender, RoutedEventArgs e)
-        {
-            VM.SavePatient(VM.CurrentPatient.LastDoctor, VM.CurrentPatient.Diagnosis, VM.CurrentPatient.Recomendations);
-        } 
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            vm.SearchPatient(id);
         }
 
         private void Button_Click_Reset(object sender, RoutedEventArgs e)
@@ -83,20 +75,21 @@ namespace project_7
             Birthday.Text = string.Empty;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+       
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-
+            vm.CurrentDoctor.Password = ((PasswordBox)sender).Password;
         }
 
-        private void Button_Change_Patient(object sender, RoutedEventArgs e)
+        private void ConfirmPasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            string changeName = Name.Text;
-            string changeLastName = LastName.Text;
-            string changeMiddleName = MiddleName.Text;
-            DateTime selectedDate = Birthday.SelectedDate ?? DateTime.Now;
-            DateOnly dateOnly = DateOnly.FromDateTime(selectedDate);
-            VM.ChangePatient(changeName, changeLastName, changeMiddleName, dateOnly);
+            vm.CurrentDoctor.ConfirmPassword = ((PasswordBox)sender).Password;
         }
+        private void Button_Save_Patient(object sender, RoutedEventArgs e)
+        {
+            vm.SavePatient(vm.CurrentPatient.LastDoctor, vm.CurrentPatient.Diagnosis, vm.CurrentPatient.Recomendations);
+        } 
+        
     }
 
 }
