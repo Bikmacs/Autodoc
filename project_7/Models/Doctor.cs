@@ -10,8 +10,8 @@ namespace project_7.Models
 {
     public class Doctor : INotifyPropertyChanged
     {
-        private int _id = 0;
-        public int Id
+        private int? _id;
+        public int? Id
         {
             get => _id;
             set

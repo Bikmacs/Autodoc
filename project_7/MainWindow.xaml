@@ -19,9 +19,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" BorderBrush="Gainsboro" Padding="1" BorderThickness="1" Margin="10,10,13,249" Grid.RowSpan="2">
-            <Grid Grid.Row="0" Grid.Column="0" Margin="10,10,10,-8">
+        <Border Background="White" BorderBrush="Gainsboro" Padding="1" BorderThickness="1" Margin="0,1,13,0">
+            <Grid Grid.Row="0" Grid.Column="0" Margin="10,10,10,0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -57,15 +58,15 @@
                 <Label Content="Подтверждение пароля" Grid.Row="6" Grid.Column="0" VerticalAlignment="Top"/>
                 <PasswordBox Grid.Row="6" Grid.Column="1" Margin="10,2" PasswordBox.PasswordChanged="ConfirmPasswordBox_PasswordChanged"/>
 
-                <Label Content="Идентификатор:" Grid.Row="7" Grid.Column="0" VerticalAlignment="Top" Margin="0,3,141,0" Grid.ColumnSpan="2"/>
-                <TextBox Text="{Binding CurrentDoctor.Id}" Grid.Row="7" Grid.Column="1" Margin="10,2,10,32" />
+                <Label Content="Идентификатор:" Grid.Row="7" Grid.Column="0" VerticalAlignment="Top" Margin="0,3,0,0" Grid.ColumnSpan="2"/>
+                <Label Content="{Binding CurrentDoctor.Id}" Grid.Row="7" Grid.Column="1" Margin="10,2,10,0" />
 
-                <Button Content="Зарегистрироваться" Grid.Row="7" Margin="0,33,67,2" Width="150" HorizontalAlignment="Right" Grid.ColumnSpan="2" Click="Button_Register" />
+                <Button Content="Зарегистрироваться" Grid.Row="8" Height="25" Width="150" HorizontalAlignment="Center" Click="Button_Register" />
             </Grid>
         </Border>
 
-        <Border Background="White" BorderBrush="Gainsboro" Padding="1" BorderThickness="1" Grid.Row="1" Margin="9,31,14,102">
-            <Grid Margin="12,-2,12,-10" Grid.Row="1" Grid.RowSpan="2">
+        <Border Background="White" BorderBrush="Gainsboro" Padding="1" BorderThickness="1" Grid.Row="1" Margin="10,20,13,20">
+            <Grid Margin="12,0,12,20" Grid.Row="1" VerticalAlignment="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -94,7 +95,7 @@
             </Grid>
         </Border>
 
-        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1" Margin="10,176,14,50" Grid.Row="1" Grid.RowSpan="2">
+        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1" Margin="10,20,13,20" Grid.Row="2">
             <StackPanel Grid.Row="2">
                 <TextBlock Text="Информация о текущем пользователе:" FontWeight="Bold"/>
 
@@ -116,8 +117,8 @@
             </StackPanel>
         </Border>
 
-        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1" Grid.Column="2" Margin="10,12,23,54">
-            <Grid Grid.Column="2" HorizontalAlignment="Left" Width="292" Height="194" VerticalAlignment="Bottom" Margin="0,0,0,-1">
+        <Border Background="White" HorizontalAlignment="Center" BorderBrush="Gainsboro" BorderThickness="1" Grid.Column="2" Margin="0,20,0,0">
+            <Grid Grid.Column="2" HorizontalAlignment="Left" Width="292" Height="194" VerticalAlignment="Bottom" Margin="0,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -134,13 +135,13 @@
                 <Label Content="Форма добавления пациента" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontWeight="Bold"/>
 
                 <Label Content="Имя" Grid.Row="1" Grid.Column="0"/>
-                <TextBox x:Name="AddName" Text="{Binding CurrentPatient.Id}" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Margin="0,0,10,26"/>
+                <TextBox x:Name="AddName" Text="{Binding CurrentPatient.Name}" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Margin="0,0,10,20"/>
 
                 <Label Content="Фамилия" Grid.Row="2" Grid.Column="0"/>
-                <TextBox x:Name="AddLastName" Text="{Binding CurrentPatient.Name}" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Margin="0,0,10,26"/>
+                <TextBox x:Name="AddLastName" Text="{Binding CurrentPatient.LastName}" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Margin="0,0,10,20"/>
 
                 <Label Content="Отчество" Grid.Row="3" Grid.Column="0"/>
-                <TextBox x:Name="AddMiddleName" Text="{Binding CurrentPatient.MiddleName}" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" Margin="0,0,10,26"/>
+                <TextBox x:Name="AddMiddleName" Text="{Binding CurrentPatient.MiddleName}" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" Margin="0,0,10,20"/>
 
                 <Label Content="День Рождения" Grid.Row="4" Grid.Column="0"/>
                 <DatePicker x:Name="AddBirthday" Text="{Binding CurrentPatient.Birthday}" Grid.Row="4" VerticalAlignment="Center" Grid.Column="1" Margin="0,0,10,0" Height="26"/>
@@ -153,8 +154,8 @@
 
 
 
-        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1"  Margin="10,218,23,104" Grid.RowSpan="2" Grid.Column="2">
-            <Grid Grid.Column="2" HorizontalAlignment="Center" Margin="0,13,0,7" Grid.Row="1" Grid.RowSpan="2" Width="282">
+        <Border Background="White" HorizontalAlignment="Center" BorderBrush="Gainsboro" BorderThickness="1"  Margin="0,20,0,0" Grid.Row="1" Grid.Column="2">
+            <Grid Grid.Column="2" HorizontalAlignment="Left" Margin="0,20,0,0" Grid.Row="3" Grid.RowSpan="2" Width="282">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -172,24 +173,24 @@
                 <Label Content="Форма изменения информации о клиенте" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontWeight="Bold"/>
 
                 <Label Content="Фамилия" Grid.Row="2" Grid.Column="0"/>
-                <TextBox  x:Name="Name" Text="{Binding CurrentPatient.Name, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Margin="110,0,10,26" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                <TextBox  x:Name="Name" Text="{Binding CurrentPatient.Name, UpdateSourceTrigger=PropertyChanged}" Width="140" HorizontalAlignment="Right" Margin="0,0,0,20" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
 
                 <Label Content="Имя" Grid.Row="3" Grid.Column="0"/>
-                <TextBox  x:Name="LastName" Text="{Binding CurrentPatient.LastName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Margin="110,0,10,26" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                <TextBox  x:Name="LastName" Text="{Binding CurrentPatient.LastName, UpdateSourceTrigger=PropertyChanged}" Width="140" HorizontalAlignment="Right" Margin="0,0,0,20" Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
 
                 <Label Content="Отчество" Grid.Row="4" Grid.Column="0"/>
-                <TextBox  x:Name="MiddleName" Text="{Binding CurrentPatient.MiddleName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Margin="110,0,10,26" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                <TextBox  x:Name="MiddleName" Text="{Binding CurrentPatient.MiddleName, UpdateSourceTrigger=PropertyChanged}" Width="140" HorizontalAlignment="Right" Margin="0,0,0,20" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
 
                 <Label Content="День Рождение:" Grid.Row="5" Grid.Column="0"/>
-                <DatePicker x:Name="Birthday" Text="{Binding CurrentPatient.Birthday, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" VerticalAlignment="Center" Margin="110,0,10,0" Height="26" Grid.ColumnSpan="2"/>
+                <DatePicker x:Name="Birthday" Text="{Binding CurrentPatient.Birthday, UpdateSourceTrigger=PropertyChanged}" Width="140" HorizontalAlignment="Right" Margin="0,0,0,20" Grid.Row="5" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2"/>
 
                 <Button Content="Изменить информацию" Margin="0,10,0,20" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" Width="152" Click="Button_Change_Patient"/>
                 <Button Content="Сбросить" Margin="0,10,0,20" Grid.Row="6" HorizontalAlignment="Left" Click="Button_Click_Reset" Width="98"/>
             </Grid>
         </Border>
 
-        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1" Margin="322,54,13,72" Grid.RowSpan="3" Grid.ColumnSpan="2">
-            <StackPanel HorizontalAlignment="Center" Margin="0,6,0,8" Width="312">
+        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Center" Margin="0,20,0,2" Grid.RowSpan="3" Grid.ColumnSpan="3">
+            <StackPanel HorizontalAlignment="Center" Margin="10,6,0,8" Width="312">
 
                 <TextBlock HorizontalAlignment="Center" Text="Форма приёма пациента:" FontWeight="Bold" Margin="0,0,0,8"/>
 
@@ -226,8 +227,8 @@
 
             </StackPanel>
         </Border>
-        <TextBox x:Name="SearchUser" HorizontalAlignment="Left" Margin="322,12,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="294" Grid.ColumnSpan="2"  />
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="282,12,0,0" VerticalAlignment="Top" Height="18" Width="40" Click="Button_Search_User"/>
+        <TextBox x:Name="SearchUser" HorizontalAlignment="Left" Margin="8,2,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="279" Grid.Column="1"  />
+        <Button Grid.Column="1" Content="ПОИСК" HorizontalAlignment="Right" Margin="0,2,3,0" VerticalAlignment="Top" Height="18" Width="45" Click="Button_Search_User"/>
 
 
 

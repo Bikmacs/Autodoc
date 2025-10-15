@@ -9,11 +9,13 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace project_7.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+
         private Doctor _currentDoctor = new Doctor();
         public Doctor CurrentDoctor
         {
@@ -27,6 +29,8 @@ namespace project_7.ViewModels
             get => _currentPatient;
             set { _currentPatient = value; OnPropertyChanged(nameof(CurrentPatient)); }
         }
+        private bool AuthorizationFlag = false;
+
 
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged(string propName) =>
@@ -69,6 +73,7 @@ namespace project_7.ViewModels
             }
 
             CurrentDoctor = doctor;
+            AuthorizationFlag = true;
             MessageBox.Show($"Успешный вход, {doctor.Name}");
         } 
 
@@ -93,14 +98,18 @@ namespace project_7.ViewModels
 
         public void SearchPatient(int id)
         {
-            string fileName = $"P_{id}.json";
-            if (!File.Exists(fileName))
+            if(AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
+            else
             {
-                MessageBox.Show("Пользователь не найден");
-                return;
+                string fileName = $"P_{id}.json";
+                if (!File.Exists(fileName))
+                {
+                    MessageBox.Show("Пользователь не найден");
+                    return;
+                }
+                string jsonString = File.ReadAllText(fileName);
+                CurrentPatient = JsonSerializer.Deserialize<Pacient>(jsonString)!;
             }
-            string jsonString = File.ReadAllText(fileName);
-            CurrentPatient = JsonSerializer.Deserialize<Pacient>(jsonString)!;
         }
 
         public void SavePatient(string lastDoc, string diagnos,string recomen)
@@ -164,7 +173,27 @@ namespace project_7.ViewModels
             MessageBox.Show($"Пациент {CurrentPatient.Name} сохранен!\nID: {CurrentPatient.Id}");
         }
 
-         private int GenerateId() => new Random().Next(10000, 99999);
+        public void ReserInformationPatient()
+        {
+            string fileName = $"P_{CurrentPatient.Id}.json";
+            if (File.Exists(fileName))
+            {
+                var file = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
+                if (file != null)
+                {
+                    file.LastAppointment = CurrentPatient.LastAppointment;
+                    file.LastDoctor = CurrentPatient.LastDoctor;
+                    file.Diagnosis = CurrentPatient.Diagnosis;
+                    file.Recomendations = CurrentPatient.Recomendations;
+                    CurrentPatient = file;
+                }
+
+            }
+            else { MessageBox.Show("Файл не найден!"); }
+
+        }
+
+        private int GenerateId() => new Random().Next(10000, 99999);
          private int GenerateUserId() => new Random().Next(1000000, 9999999);
     }
 }

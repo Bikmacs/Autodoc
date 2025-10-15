@@ -38,6 +38,7 @@ namespace project_7
         {
             int.TryParse(LoginText.Text, out int id);
             vm.LoginDoctor(id, PasswordText.Password);
+            
         }
         private void Button_Add_User(object sender, RoutedEventArgs e)
         {
@@ -69,10 +70,7 @@ namespace project_7
 
         private void Button_Click_Reset(object sender, RoutedEventArgs e)
         {
-            Name.Text = string.Empty;
-            LastName.Text = string.Empty;
-            MiddleName.Text = string.Empty;
-            Birthday.Text = string.Empty;
+            vm.ReserInformationPatient();
         }
 
        
@@ -93,5 +91,4 @@ namespace project_7
     }
 
 }
-// поиск по авторизации 
 // вернуть в последнее состояние файла
