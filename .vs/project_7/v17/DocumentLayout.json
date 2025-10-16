@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "project_7\\MainWindow.xaml.cs",
               "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml.cs",
               "RelativeToolTip": "project_7\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAjwEgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswC0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T15:23:18.262Z",
               "IsPinned": true,
@@ -48,27 +48,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "project_7\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "project_7\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAADwv7oAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAowNEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T19:16:01.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml",
               "RelativeDocumentMoniker": "project_7\\MainWindow.xaml",
               "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml",
               "RelativeToolTip": "project_7\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-09T03:06:40.469Z",
+              "WhenOpened": "2025-10-16T05:00:03.94Z",
               "EditorCaption": ""
             },
             {
@@ -79,7 +79,7 @@
               "RelativeDocumentMoniker": "project_7\\Models\\Pacient.cs",
               "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Pacient.cs",
               "RelativeToolTip": "project_7\\Models\\Pacient.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T14:35:04.865Z",
               "EditorCaption": ""
@@ -92,7 +92,7 @@
               "RelativeDocumentMoniker": "project_7\\Models\\Doctor.cs",
               "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Doctor.cs",
               "RelativeToolTip": "project_7\\Models\\Doctor.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwAwAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwEUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T06:33:57.486Z",
               "EditorCaption": ""

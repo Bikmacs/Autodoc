@@ -1,0 +1,11 @@
+{
+  "Id": 0,
+  "Name": null,
+  "LastName": null,
+  "MiddleName": "",
+  "Birthday": "0001-01-01",
+  "LastAppointment": "0001-01-01",
+  "LastDoctor": "123",
+  "Diagnosis": "wdas",
+  "Recomendations": "adsasd"
+}

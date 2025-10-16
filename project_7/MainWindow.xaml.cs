@@ -33,33 +33,22 @@ namespace project_7
         private void Button_Register(object sender, RoutedEventArgs e)
         {
             vm.RegisterDoctor();
+            UpdateWindow();
         }
         private void Button_Login(object sender, RoutedEventArgs e)
         {
             int.TryParse(LoginText.Text, out int id);
             vm.LoginDoctor(id, PasswordText.Password);
-            
         }
         private void Button_Add_User(object sender, RoutedEventArgs e)
         {
-            string Name = AddName.Text;
-            string LastName = AddLastName.Text;
-            string MiddleName = AddMiddleName.Text;
-            DateOnly birthday = AddBirthday.SelectedDate.HasValue
-                ? DateOnly.FromDateTime(AddBirthday.SelectedDate.Value)
-                : DateOnly.FromDateTime(DateTime.Now);
-
-            vm.AddPatient(Name, LastName, MiddleName, birthday);
+            vm.AddPatients();
+            UpdateWindow();
         }
 
         private void Button_Change_Patient(object sender, RoutedEventArgs e)
-        {
-            string changeName = Name.Text;
-            string changeLastName = LastName.Text;
-            string changeMiddleName = MiddleName.Text;
-            DateTime selectedDate = Birthday.SelectedDate ?? DateTime.Now;
-            DateOnly dateOnly = DateOnly.FromDateTime(selectedDate);
-            vm.ChangePatient(changeName, changeLastName, changeMiddleName, dateOnly);
+        {            
+            vm.ChangePatient2();
         }
 
         private void Button_Search_User(object sender, RoutedEventArgs e)
@@ -76,19 +65,28 @@ namespace project_7
        
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            vm.CurrentDoctor.Password = ((PasswordBox)sender).Password;
+            vm.RegisterDoctrors.Password = ((PasswordBox)sender).Password;
         }
 
         private void ConfirmPasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            vm.CurrentDoctor.ConfirmPassword = ((PasswordBox)sender).Password;
+            vm.RegisterDoctrors.ConfirmPassword = ((PasswordBox)sender).Password;
         }
         private void Button_Save_Patient(object sender, RoutedEventArgs e)
         {
             vm.SavePatient(vm.CurrentPatient.LastDoctor, vm.CurrentPatient.Diagnosis, vm.CurrentPatient.Recomendations);
-        } 
+        }
+
+        public void UpdateWindow()
+        {
+            int filePacient = Directory.GetFiles(".", "P_*.json").Length;
+            int fileDoctors = Directory.GetFiles(".", "D_*.json").Length;
+            status.Text = $"Пациентов: {filePacient.ToString()}";
+            qual.Text = $"Докторов: {fileDoctors.ToString()}";
+        }
+
+      
         
     }
 
 }
-// вернуть в последнее состояние файла

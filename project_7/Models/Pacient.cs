@@ -10,8 +10,8 @@ namespace project_7.Models
 {
     public class Pacient : INotifyPropertyChanged
     {
-        private int _id;
-        public int Id
+        private int? _id;
+        public int? Id
         {
             get => _id;
             set
@@ -135,6 +135,7 @@ namespace project_7.Models
                 }
             }
         }
+        
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
