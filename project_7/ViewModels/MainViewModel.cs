@@ -15,6 +15,12 @@ namespace project_7.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+        private object _currentView;
+        public object CurrentView
+        {
+            get { return _currentView; }
+            set { _currentView = value; OnPropertyChanged(nameof(CurrentView)); }
+        }
 
         private Doctor _currentDoctor = new Doctor();
         public Doctor CurrentDoctor
@@ -59,176 +65,175 @@ namespace project_7.ViewModels
         protected void OnPropertyChanged(string propName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
 
-        public void RegisterDoctor()
-        {
-            if (CurrentDoctor.Password != CurrentDoctor.ConfirmPassword)
-            {
-                MessageBox.Show("Пароли не равны");
-                return;
-            }
+        //public void RegisterDoctor()
+        //{
+        //    if (CurrentDoctor.Password != CurrentDoctor.ConfirmPassword)
+        //    {
+        //        MessageBox.Show("Пароли не равны");
+        //        return;
+        //    }
 
-            if (RegisterDoctrors.Name == null || RegisterDoctrors.LastName == null || RegisterDoctrors.MiddleName == null || RegisterDoctrors.Password == null || RegisterDoctrors.Specialisation == null)
-            {
-                MessageBox.Show("Поля пустые");
-            }
-            else
-            {
-                RegisterDoctrors.Id = GenerateId();
-                string fileName = $"D_{RegisterDoctrors.Id}.json";
-                string jsonString = JsonSerializer.Serialize(RegisterDoctrors, new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-                });
-                File.WriteAllText(fileName, jsonString);
-                MessageBox.Show($"Доктор {RegisterDoctrors.Name} успешно зарегистрирован!\nID: {RegisterDoctrors.Id}");
-            }
-        }
+        //    if (RegisterDoctrors.Name == null || RegisterDoctrors.LastName == null || RegisterDoctrors.MiddleName == null || RegisterDoctrors.Password == null || RegisterDoctrors.Specialisation == null)
+        //    {
+        //        MessageBox.Show("Поля пустые");
+        //    }
+        //    else
+        //    {
+        //        RegisterDoctrors.Id = GenerateId();
+        //        string fileName = $"D_{RegisterDoctrors.Id}.json";
+        //        string jsonString = JsonSerializer.Serialize(RegisterDoctrors, new JsonSerializerOptions
+        //        {
+        //            WriteIndented = true,
+        //            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        //        });
+        //        File.WriteAllText(fileName, jsonString);
+        //        MessageBox.Show($"Доктор {RegisterDoctrors.Name} успешно зарегистрирован!\nID: {RegisterDoctrors.Id}");
+        //    }
+        //}
 
-        public void LoginDoctor(int id, string password)
-        {
-            string fileName = $"D_{id}.json";
-            if (!File.Exists(fileName))
-            {
-                MessageBox.Show("Пользователь не найден");
-                return;
-            }
+        //public void LoginDoctor(int id, string password)
+        //{
+        //    string fileName = $"D_{id}.json";
+        //    if (!File.Exists(fileName))
+        //    {
+        //        MessageBox.Show("Пользователь не найден");
+        //        return;
+        //    }
 
-            var json = File.ReadAllText(fileName);
-            var doctor = JsonSerializer.Deserialize<Doctor>(json);
-            if (doctor?.Password != password)
-            {
-                MessageBox.Show("Неверный пароль");
-                return;
-            }
+        //    var json = File.ReadAllText(fileName);
+        //    var doctor = JsonSerializer.Deserialize<Doctor>(json);
+        //    if (doctor?.Password != password)
+        //    {
+        //        MessageBox.Show("Неверный пароль");
+        //        return;
+        //    }
 
-            CurrentDoctor = doctor;
-            AuthorizationFlag = true;
-            MessageBox.Show($"Успешный вход, {doctor.Name}");
-        }
-        public void AddPatients()
-        {
-            if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
-            else
-            {
-                AddPatient.Id = GenerateUserId();
-                string fileName = $"P_{AddPatient.Id}.json";
-                string jsonString = JsonSerializer.Serialize(AddPatient, new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-                });
-                File.WriteAllText(fileName, jsonString);
-                MessageBox.Show($"Пациент {AddPatient.Name} успешно зарегистрирован!\nID: {AddPatient.Id}");
-            }
-        }
-
-
-        public void SearchPatient(int id)
-        {
-            if(AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
-            else
-            {
-                string fileName = $"P_{id}.json";
-                if (!File.Exists(fileName))
-                {
-                    MessageBox.Show("Пользователь не найден");
-                    return;
-                }
-                string jsonString = File.ReadAllText(fileName);
-                CurrentPatient = JsonSerializer.Deserialize<Pacient>(jsonString)!;
-            }
-        }
-
-        public void SavePatient(string lastDoc, string diagnos,string recomen)
-        {
-            if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
-            else
-            {
-                CurrentPatient.LastDoctor = lastDoc;
-                CurrentPatient.Diagnosis = diagnos;
-                CurrentPatient.Recomendations = recomen;
-
-                string fileName = $"P_{CurrentPatient.Id}.json";
-
-                if (File.Exists(fileName))
-                {
-                    var oldFile = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
-                    if (oldFile != null)
-                    {
-                        oldFile.LastDoctor = CurrentPatient.LastDoctor;
-                        oldFile.Diagnosis = CurrentPatient.Diagnosis;
-                        oldFile.Recomendations = CurrentPatient.Recomendations;
-                        oldFile.LastAppointment = DateOnly.FromDateTime(DateTime.Now);
-                        CurrentPatient = oldFile;
-                    }
-                }
+        //    CurrentDoctor = doctor;
+        //    AuthorizationFlag = true;
+        //    MessageBox.Show($"Успешный вход, {doctor.Name}");
+        //}
+        //public void AddPatients()
+        //{
+        //    if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
+        //    else
+        //    {
+        //        AddPatient.Id = GenerateUserId();
+        //        string fileName = $"P_{AddPatient.Id}.json";
+        //        string jsonString = JsonSerializer.Serialize(AddPatient, new JsonSerializerOptions
+        //        {
+        //            WriteIndented = true,
+        //            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        //        });
+        //        File.WriteAllText(fileName, jsonString);
+        //        MessageBox.Show($"Пациент {AddPatient.Name} успешно зарегистрирован!\nID: {AddPatient.Id}");
+        //    }
+        //}
 
 
-                string jsonString = JsonSerializer.Serialize(CurrentPatient, new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-                });
-                File.WriteAllText(fileName, jsonString);
-                MessageBox.Show($"Пациент {CurrentPatient.Name} сохранен!\nID: {CurrentPatient.Id}");
-            }
-        }
-        public void ChangePatient2()
-        {
-            if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
-            else
-            {
-                string fileName = $"P_{CurrentPatient.Id}.json";
+        //public void SearchPatient(int id)
+        //{
+        //    if(AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
+        //    else
+        //    {
+        //        string fileName = $"P_{id}.json";
+        //        if (!File.Exists(fileName))
+        //        {
+        //            MessageBox.Show("Пользователь не найден");
+        //            return;
+        //        }
+        //        string jsonString = File.ReadAllText(fileName);
+        //        CurrentPatient = JsonSerializer.Deserialize<Pacient>(jsonString)!;
+        //    }
+        //}
 
-                if (File.Exists(fileName))
-                {
-                    var oldFile2 = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
-                    if (oldFile2 != null)
-                    {
-                        oldFile2.Name = ChangePatients.Name;
-                        oldFile2.Diagnosis = ChangePatients.LastName;
-                        oldFile2.Recomendations = ChangePatients.MiddleName;
-                        oldFile2.Birthday = ChangePatients.Birthday;
-                        ChangePatients = oldFile2;
-                    }
-                }
-                string jsonString = JsonSerializer.Serialize(ChangePatients, new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-                });
-                File.WriteAllText(fileName, jsonString);
-                MessageBox.Show($"Пациент {ChangePatients.Name} сохранен!\nID: {ChangePatients.Id}");
-            }
-        }
-        public void ReserInformationPatient()
-        {
-            if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
-            else
-            {
-                string fileName = $"P_{CurrentPatient.Id}.json";
-                if (File.Exists(fileName))
-                {
-                    var file = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
-                    if (file != null)
-                    {
-                        file.LastAppointment = CurrentPatient.LastAppointment;
-                        file.LastDoctor = CurrentPatient.LastDoctor;
-                        file.Diagnosis = CurrentPatient.Diagnosis;
-                        file.Recomendations = CurrentPatient.Recomendations;
-                        CurrentPatient = file;
-                    }
+        //public void SavePatient(string lastDoc, string diagnos,string recomen)
+        //{
+        //    if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
+        //    else
+        //    {
+        //        CurrentPatient.LastDoctor = lastDoc;
+        //        CurrentPatient.Diagnosis = diagnos;
+        //        CurrentPatient.Recomendations = recomen;
 
-                }
-                else { MessageBox.Show("Файл не найден!"); }
-            }
+        //        string fileName = $"P_{CurrentPatient.Id}.json";
 
-        }
+        //        if (File.Exists(fileName))
+        //        {
+        //            var oldFile = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
+        //            if (oldFile != null)
+        //            {
+        //                oldFile.LastDoctor = CurrentPatient.LastDoctor;
+        //                oldFile.Diagnosis = CurrentPatient.Diagnosis;
+        //                oldFile.Recomendations = CurrentPatient.Recomendations;
+        //                oldFile.LastAppointment = DateOnly.FromDateTime(DateTime.Now);
+        //                CurrentPatient = oldFile;
+        //            }
+        //        }
+
+
+        //        string jsonString = JsonSerializer.Serialize(CurrentPatient, new JsonSerializerOptions
+        //        {
+        //            WriteIndented = true,
+        //            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        //        });
+        //        File.WriteAllText(fileName, jsonString);
+        //        MessageBox.Show($"Пациент {CurrentPatient.Name} сохранен!\nID: {CurrentPatient.Id}");
+        //    }
+        //}
+        //public void ChangePatient2()
+        //{
+        //    if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
+        //    else
+        //    {
+        //        string fileName = $"P_{CurrentPatient.Id}.json";
+
+        //        if (File.Exists(fileName))
+        //        {
+        //            var oldFile2 = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
+        //            if (oldFile2 != null)
+        //            {
+        //                oldFile2.Name = ChangePatients.Name;
+        //                oldFile2.Diagnosis = ChangePatients.LastName;
+        //                oldFile2.Recomendations = ChangePatients.MiddleName;
+        //                oldFile2.Birthday = ChangePatients.Birthday;
+        //                ChangePatients = oldFile2;
+        //            }
+        //        }
+        //        string jsonString = JsonSerializer.Serialize(ChangePatients, new JsonSerializerOptions
+        //        {
+        //            WriteIndented = true,
+        //            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        //        });
+        //        File.WriteAllText(fileName, jsonString);
+        //        MessageBox.Show($"Пациент {ChangePatients.Name} сохранен!\nID: {ChangePatients.Id}");
+        //    }
+        //}
+        //public void ReserInformationPatient()
+        //{
+        //    if (AuthorizationFlag == false) MessageBox.Show("Вы не авторизованы");
+        //    else
+        //    {
+        //        string fileName = $"P_{CurrentPatient.Id}.json";
+        //        if (File.Exists(fileName))
+        //        {
+        //            var file = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
+        //            if (file != null)
+        //            {
+        //                file.LastAppointment = CurrentPatient.LastAppointment;
+        //                file.LastDoctor = CurrentPatient.LastDoctor;
+        //                file.Diagnosis = CurrentPatient.Diagnosis;
+        //                file.Recomendations = CurrentPatient.Recomendations;
+        //                CurrentPatient = file;
+        //            }
+
+        //        }
+        //        else { MessageBox.Show("Файл не найден!"); }
+        //    }
+
+        //}
 
       
 
         private int GenerateId() => new Random().Next(10000, 99999);
-         private int GenerateUserId() => new Random().Next(1000000, 9999999);
     }
 }

@@ -1,0 +1,10 @@
+{
+  "Id": 68997,
+  "Name": "Максим",
+  "LastName": "Шмелев",
+  "MiddleName": "Константинович",
+  "Specialisation": "Окулист",
+  "Password": "123",
+  "ConfirmPassword": "123",
+  "Pacient": null
+}

@@ -1,0 +1,57 @@
+{
+  "Id": 3208083,
+  "Name": "asda",
+  "LastName": "asd",
+  "MiddleName": "asd",
+  "Birthday": "2025-10-22T00:00:00+05:00",
+  "AppointmentStores": [
+    {
+      "Date": "2025-10-22T22:36:41.2414851+05:00",
+      "DoctorId": null,
+      "Diagnosis": null,
+      "Recomendations": null
+    },
+    {
+      "Date": "2025-10-22T22:47:15.899897+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": null,
+      "Recomendations": null
+    },
+    {
+      "Date": "2025-10-22T22:48:40.6049118+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": null,
+      "Recomendations": null
+    },
+    {
+      "Date": "2025-10-22T22:54:10.1481272+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": "asd",
+      "Recomendations": "asd"
+    },
+    {
+      "Date": "2025-10-22T22:54:18.7901481+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": "asdfsd",
+      "Recomendations": "asd"
+    },
+    {
+      "Date": "2025-10-22T22:54:59.1287143+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": "sda",
+      "Recomendations": "asd"
+    },
+    {
+      "Date": "2025-10-22T23:11:17.3956749+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": "asd",
+      "Recomendations": "gffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdgffffffffffffffffffffffffffdv"
+    },
+    {
+      "Date": "2025-10-22T23:12:25.5723264+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": "тошнотик",
+      "Recomendations": "фыв"
+    }
+  ]
+}

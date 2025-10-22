@@ -1,0 +1,16 @@
+{
+  "Id": 2266114,
+  "Name": "Юля",
+  "LastName": "Дернова",
+  "MiddleName": "Алексеевна",
+  "Birthday": "2007-06-01T00:00:00",
+  "PhoneNumber": "+79826935835",
+  "AppointmentStores": [
+    {
+      "Date": "2025-10-22T23:25:15.8381072+05:00",
+      "DoctorId": 68997,
+      "Diagnosis": "Красотка",
+      "Recomendations": "Пить воду"
+    }
+  ]
+}

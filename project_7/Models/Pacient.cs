@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -66,8 +67,8 @@ namespace project_7.Models
             }
         }
 
-        private DateOnly _birthday;
-        public DateOnly Birthday
+        private DateTime? _birthday;
+        public DateTime? Birthday
         {
             get => _birthday;
             set
@@ -80,62 +81,23 @@ namespace project_7.Models
             }
         }
 
-        private DateOnly _lastAppointment;
-        public DateOnly LastAppointment
-        {
-            get => _lastAppointment;
-            set
-            {
-                if (_lastAppointment != value)
-                {
-                    _lastAppointment = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private string? _lastDoctor;
-        public string? LastDoctor
-        {
-            get => _lastDoctor;
-            set
-            {
-                if (_lastDoctor != value)
-                {
-                    _lastDoctor = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private string? _diagnosis;
-        public string? Diagnosis
-        {
-            get => _diagnosis;
-            set
-            {
-                if (_diagnosis != value)
-                {
-                    _diagnosis = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private string? _recomendations;
-        public string? Recomendations
-        {
-            get => _recomendations;
-            set
-            {
-                if (_recomendations != value)
-                {
-                    _recomendations = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
         
+        private string? _phoneNumber;
+        public string? PhoneNumber
+        {
+            get => _phoneNumber;
+            set
+            {
+                if (_phoneNumber != value)
+                {
+                    _phoneNumber = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public ObservableCollection<AppointmentStories> AppointmentStores { get; set; } = new ObservableCollection<AppointmentStories>();
+
 
 
         public event PropertyChangedEventHandler? PropertyChanged;

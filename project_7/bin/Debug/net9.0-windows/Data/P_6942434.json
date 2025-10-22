@@ -1,0 +1,15 @@
+{
+  "Id": 6942434,
+  "Name": "Шмелев",
+  "LastName": "Максим",
+  "MiddleName": "Константинович",
+  "Birthday": "2005-04-27T00:00:00",
+  "AppointmentStores": [
+    {
+      "Date": "2025-10-22T22:30:03.945822+05:00",
+      "DoctorId": null,
+      "Diagnosis": null,
+      "Recomendations": null
+    }
+  ]
+}

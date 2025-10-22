@@ -1,0 +1,21 @@
+{
+  "Id": 3208083,
+  "Name": "asda",
+  "LastName": "asd",
+  "MiddleName": "asd",
+  "Birthday": "2025-10-22T00:00:00+05:00",
+  "AppointmentStores": [
+    {
+      "Date": "2025-10-22T22:31:02.9485045+05:00",
+      "DoctorId": null,
+      "Diagnosis": null,
+      "Recomendations": null
+    },
+    {
+      "Date": "2025-10-22T22:31:11.2006177+05:00",
+      "DoctorId": null,
+      "Diagnosis": null,
+      "Recomendations": null
+    }
+  ]
+}

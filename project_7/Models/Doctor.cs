@@ -111,7 +111,7 @@ namespace project_7.Models
         }
 
 
-
+        public Pacient? Pacient { get; set; }   
 
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string? propName = null)

@@ -1,0 +1,104 @@
+﻿<Page x:Class="project_7.Views.PageReception"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:project_7.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="PageReception">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Изменить информацию о пациенте" Width="auto" Height="30" HorizontalAlignment="Center" Margin="5" Command="{Binding SavePacientCommand}"/>
+
+
+        <ListView Grid.Row="1" Grid.Column="1"
+                    Margin="3"
+                    ItemsSource="{Binding AppoinmentHistory}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Дата приёма: " FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Date, StringFormat='dd.MM.yyyy HH:mm'}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="ID доктора: "/>
+                            <TextBlock Text="{Binding DoctorId}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Диагноз: "/>
+                            <TextBlock Text="{Binding Diagnosis}" TextWrapping="Wrap"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Рекомендации: "/>
+                            <TextBlock Text="{Binding Recomendations}" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1"
+        HorizontalAlignment="Left"
+        Grid.Row="1">
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="3">
+                <StackPanel HorizontalAlignment="Center" Margin="10" Width="365" >
+
+                    <TextBlock HorizontalAlignment="Center" 
+                       Text="Форма приёма пациента:" 
+                       FontWeight="Bold" 
+                       Margin="0,0,0,8"/>
+
+                    <TextBlock Text="Идентификатор:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.Id}" Margin="5"/>
+
+                    <TextBlock Text="Фамилия:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.LastName}" Margin="5"/>
+
+                    <TextBlock Text="Имя:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.Name}" Margin="5"/>
+
+                    <TextBlock Text="Отчество:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.MiddleName}" Margin="5"/>
+
+                    <TextBlock Text="День Рождения:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.Birthday}" Margin="5"/>
+
+                    <TextBlock Text="Номер телефона:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.PhoneNumber}" Margin="5"/>
+
+                    <TextBlock Text="Последний раз:" Margin="5"/>
+                    <TextBlock Text="{Binding CurrentPatient.LastAppointment}" Margin="5"/>
+
+                    <TextBlock Text="Последний Доктор:" Margin="5"/>
+                    <TextBox Text="{Binding Appointment.DoctorId, UpdateSourceTrigger=PropertyChanged}"
+                     Width="155" HorizontalAlignment="Left" Margin="5" />
+                    <TextBlock Text="Диагноз:" Margin="5"/>
+                    <TextBox Text="{Binding Appointment.Diagnosis, UpdateSourceTrigger=PropertyChanged}"
+                     Width="155" HorizontalAlignment="Left" Margin="5"/>
+
+                    <TextBlock Text="Рекомендации:" Margin="5"/>
+                    <TextBox Text="{Binding Appointment.Recomendations, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"
+                     Height="52"
+                     Width="200"
+                     TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     Margin="5"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Page>

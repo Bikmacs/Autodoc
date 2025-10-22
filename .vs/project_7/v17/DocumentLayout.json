@@ -3,24 +3,104 @@
   "WorkspaceRootPath": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\regpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\regpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\pagereception.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagereception.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\pagechangepacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagechangepacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\mainpagedoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainpagedoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\addpacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\addpacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\mainpagedoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainpagedoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\addpacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\addpacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\regpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\regpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\receptiopagevievmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\receptiopagevievmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\mainpagedoctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\mainpagedoctorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\viewmodels\\changepacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\changepacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\pagereception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagereception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\pagechangepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagechangepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\views\\regpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\regpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\models\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\models\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\\u0443\u0447\u0435\u0431\u0430\\c#\\trpo\\project_7\\project_7\\models\\appointmentstories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\appointmentstories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +110,323 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "project_7\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml.cs",
-              "RelativeToolTip": "project_7\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAswC0AAAAbAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AddPacient.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\AddPacient.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\AddPacient.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\AddPacient.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\AddPacient.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T15:23:18.262Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-10-22T16:28:44.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "project_7\\ViewModels\\MainViewModel.cs",
-              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainViewModel.cs",
-              "RelativeToolTip": "project_7\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAowNEAAABAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:16:01.923Z",
+              "WhenOpened": "2025-10-22T18:15:07.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "project_7\\MainWindow.xaml",
-              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\MainWindow.xaml",
-              "RelativeToolTip": "project_7\\MainWindow.xaml",
+              "DocumentIndex": 7,
+              "Title": "MainPageDoctor.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainPageDoctor.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainPageDoctor.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainPageDoctor.xaml",
+              "RelativeToolTip": "project_7\\Views\\MainPageDoctor.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-16T05:00:03.94Z",
+              "WhenOpened": "2025-10-22T16:23:42.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Pacient.cs",
-              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Pacient.cs",
-              "RelativeDocumentMoniker": "project_7\\Models\\Pacient.cs",
-              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Pacient.cs",
-              "RelativeToolTip": "project_7\\Models\\Pacient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Title": "MainPageDoctor.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainPageDoctor.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainPageDoctor.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainPageDoctor.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\MainPageDoctor.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T14:35:04.865Z",
+              "WhenOpened": "2025-10-22T16:41:32.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:15:43.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageChangePacient.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageChangePacient.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageChangePacient.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageChangePacient.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\PageChangePacient.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:24:41.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PageReception.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageReception.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageReception.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageReception.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\PageReception.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:34:51.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegPage.xaml.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\RegPage.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\RegPage.xaml.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\RegPage.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\RegPage.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:15:25.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddPacient.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\AddPacient.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\AddPacient.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\AddPacient.xaml",
+              "RelativeToolTip": "project_7\\Views\\AddPacient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T16:24:39.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegPageViewModel.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\RegPageViewModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\RegPageViewModel.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\RegPageViewModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\RegPageViewModel.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:25:17.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReceptioPageVievModel.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAqwDIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:36:34.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:24:52.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainPageDoctorViewModel.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainPageDoctorViewModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\MainPageDoctorViewModel.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\MainPageDoctorViewModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\MainPageDoctorViewModel.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAADYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:30:57.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginPageViewModel.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\LoginPageViewModel.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\LoginPageViewModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:25:34.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChangePacient.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\ChangePacient.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\ChangePacient.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\ViewModels\\ChangePacient.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\ChangePacient.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwBIAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:24:43.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "project_7\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "project_7\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:29:11.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "project_7\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T16:35:24.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\LoginPage.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "project_7\\Views\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T18:17:54.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PageReception.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageReception.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageReception.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageReception.xaml",
+              "RelativeToolTip": "project_7\\Views\\PageReception.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T16:23:54.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PageChangePacient.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageChangePacient.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageChangePacient.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\PageChangePacient.xaml",
+              "RelativeToolTip": "project_7\\Views\\PageChangePacient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T16:28:50.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegPage.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\RegPage.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\RegPage.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Views\\RegPage.xaml",
+              "RelativeToolTip": "project_7\\Views\\RegPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T16:39:57.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "project_7\\Models\\Doctor.cs",
               "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Doctor.cs",
               "RelativeToolTip": "project_7\\Models\\Doctor.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T06:33:57.486Z",
+              "WhenOpened": "2025-10-22T16:53:38.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\App.xaml",
+              "RelativeDocumentMoniker": "project_7\\App.xaml",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\App.xaml",
+              "RelativeToolTip": "project_7\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-22T18:15:24.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Pacient.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Pacient.cs",
+              "RelativeDocumentMoniker": "project_7\\Models\\Pacient.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\Pacient.cs",
+              "RelativeToolTip": "project_7\\Models\\Pacient.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:53:45.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppointmentStories.cs",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\AppointmentStories.cs",
+              "RelativeDocumentMoniker": "project_7\\Models\\AppointmentStories.cs",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u0430\\C#\\TRPO\\project_7\\project_7\\Models\\AppointmentStories.cs",
+              "RelativeToolTip": "project_7\\Models\\AppointmentStories.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:57:45.362Z",
               "EditorCaption": ""
             }
           ]
