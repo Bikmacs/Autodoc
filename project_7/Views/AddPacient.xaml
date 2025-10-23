@@ -38,10 +38,13 @@
         <DatePicker SelectedDate="{Binding AddPacient.Birthday, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
             Grid.Row="4" VerticalAlignment="Center" Grid.Column="1"/>
 
-        <Label Content="Отчество" Grid.Row="5" Grid.Column="0"/>
+        <Label Content="Номер телефона" Grid.Row="5" Grid.Column="0"/>
         <TextBox Text="{Binding AddPacient.PhoneNumber}" Grid.Row="5" Grid.Column="1"/>
 
 
-        <Button Content="Добавить пациента" Grid.Row="6" Margin="5" Grid.Column="0" Width="200" Height="25" Click="Button_Add_Pacient" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <Button Content="Добавить пациента" Grid.Row="6" Margin="5" Grid.Column="0" Width="200" Height="25" Command="{Binding AddPacientViewCommand}" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+
+        <Button Content="Назад" Height="30" Grid.Row="6" HorizontalAlignment="Left" Margin="5" Command="{Binding Back}"/>
+
     </Grid>
 </Page>

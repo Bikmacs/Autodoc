@@ -35,9 +35,6 @@ namespace project_7.Views
             VMChange.AddPacient = new Pacient();
         }
 
-        private void Button_Change_Patient(object sender, RoutedEventArgs e)
-        {
-            VMChange.ChangeByPacient();
-        }
+     
     }
 }

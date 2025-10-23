@@ -21,10 +21,14 @@ namespace project_7.Views
     /// </summary>
     public partial class AddPacient : Page
     {
-        public ChangePacient CP { get; set; } = new ChangePacient();
-        public AddPacient()
+        public ChangePacient CP { get; set; }
+        public AddPacient(MainPageDoctorViewModel mainPage)
         {
             InitializeComponent();
+            CP = new ChangePacient
+            {
+                MainPage = mainPage,
+            };
             DataContext = CP;
         }
 

@@ -1,0 +1,42 @@
+{
+  "Id": 2095755,
+  "Name": "Максим",
+  "LastName": "Брутальный",
+  "MiddleName": "Вадимович",
+  "Birthday": "2025-10-23T00:00:00+05:00",
+  "PhoneNumber": "+79221465339",
+  "AppointmentStores": [
+    {
+      "Date": "2025-10-23T09:12:29.477239+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "фыв",
+      "Recomendations": "ыв"
+    },
+    {
+      "Date": "2025-10-23T09:16:44.2850821+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": null,
+      "Recomendations": null
+    },
+    {
+      "Date": "2025-10-23T09:20:46.5900736+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "уйц",
+      "Recomendations": "йцу"
+    },
+    {
+      "Date": "2025-10-23T09:37:09.6575581+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "jjj",
+      "Recomendations": "jjjj"
+    }
+  ]
+}

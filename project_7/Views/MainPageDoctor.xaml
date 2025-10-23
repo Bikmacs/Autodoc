@@ -27,7 +27,7 @@
             </StackPanel>
 
             <ListView Grid.Row="1" Grid.Column="1"
-              ItemsSource="{Binding PacientList}"
+              ItemsSource="{Binding PacientList, Mode=TwoWay}"
               SelectedItem="{Binding SelectedPacient, Mode=TwoWay}"
               MouseDoubleClick="EditItem_Click">
                 <ListView.ItemTemplate>
@@ -52,10 +52,6 @@
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="День рождение: "/>
                                 <TextBlock Text="{Binding Birthday}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Последний приём: "/>
-                                <TextBlock Text="{Binding LastAppointment}"/>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>

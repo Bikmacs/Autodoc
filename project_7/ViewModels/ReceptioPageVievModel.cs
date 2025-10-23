@@ -20,9 +20,8 @@ namespace project_7.ViewModels
     {
         public ObservableCollection<AppointmentStories> AppoinmentHistory { get; set; } = new ObservableCollection<AppointmentStories>();
 
-        public ICommand AddPacientCommand { get; }
-        public ICommand StartReceptionCommand { get; }
-        public ICommand EditPacientCommand { get; }
+        public ICommand Back { get; }
+        public ICommand SavePacientCommand { get; }
 
 
         private Pacient? _currentPatient;
@@ -47,7 +46,6 @@ namespace project_7.ViewModels
         }
 
 
-        public ICommand SavePacientCommand { get; }
         public ReceptioPageVievModel(Pacient pacient, Doctor doctor)
         {
             CurrentDoctor = doctor;
@@ -55,10 +53,12 @@ namespace project_7.ViewModels
             Appointment = new AppointmentStories
             {
                 Date = DateTime.Now,
-                DoctorId = doctor?.Id
+                DoctorId = doctor?.Id,
+                DoctorLastName = doctor?.LastName,
+                DoctorName = doctor?.Name,
             };
             SavePacientCommand = new RelayCommand(_ =>  SavePacient());
-
+            Back = new RelayCommand(_ => MainWindow.Pages?.GoBack());
             UpdateHistory();
         }
         public void UpdateHistory()
@@ -77,6 +77,7 @@ namespace project_7.ViewModels
                         foreach (var appointment in historyPacient.AppointmentStores.OrderByDescending(a => a.Date))
                         {
                             AppoinmentHistory.Add(appointment);
+
                         }
                     }
                 }
@@ -105,6 +106,8 @@ namespace project_7.ViewModels
                     {
                         Date = DateTime.Now,
                         DoctorId = CurrentDoctor?.Id,
+                        DoctorLastName = CurrentDoctor?.LastName,
+                        DoctorName = CurrentDoctor?.Name,
                         Diagnosis = Appointment?.Diagnosis, 
                         Recomendations = Appointment?.Recomendations,
                     };

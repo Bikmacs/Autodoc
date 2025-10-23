@@ -44,7 +44,7 @@
                 <TextBox Text="{Binding AddPacient.PhoneNumber}" Grid.Row="6" Grid.Column="1"/>
 
 
-                <Button Content="Изменить информацию" Grid.Row="7" Grid.Column="1" Click="Button_Change_Patient" Margin="5"/>
+                <Button Content="Изменить информацию" Command="{Binding ChangePacBack}" Grid.Row="7" Grid.Column="1" Margin="5"/>
                 <Button Content="Сбросить" Grid.Row="7" Click="Button_Click_Reset" Margin="5"/>
             </Grid>
         </Border>

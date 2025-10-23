@@ -32,7 +32,6 @@ namespace project_7.Views
 
             VMDoctor.ListPacient();
         }
-
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             VMDoctor.PageAddPacient();

@@ -13,57 +13,57 @@ using System.Xml.Serialization;
 
 namespace project_7.ViewModels
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel
     {
-        private object _currentView;
-        public object CurrentView
-        {
-            get { return _currentView; }
-            set { _currentView = value; OnPropertyChanged(nameof(CurrentView)); }
-        }
+        //private object _currentView;
+        //public object CurrentView
+        //{
+        //    get { return _currentView; }
+        //    set { _currentView = value; OnPropertyChanged(nameof(CurrentView)); }
+        //}
 
-        private Doctor _currentDoctor = new Doctor();
-        public Doctor CurrentDoctor
-        {
-            get => _currentDoctor;
-            set { _currentDoctor = value; OnPropertyChanged(nameof(CurrentDoctor)); }
-        }
+        //private Doctor _currentDoctor = new Doctor();
+        //public Doctor CurrentDoctor
+        //{
+        //    get => _currentDoctor;
+        //    set { _currentDoctor = value; OnPropertyChanged(nameof(CurrentDoctor)); }
+        //}
 
-        private Pacient _currentPatient = new Pacient();
-        public Pacient CurrentPatient
-        {
-            get => _currentPatient;
-            set { _currentPatient = value; OnPropertyChanged(nameof(CurrentPatient)); }
-        }
+        //private Pacient _currentPatient = new Pacient();
+        //public Pacient CurrentPatient
+        //{
+        //    get => _currentPatient;
+        //    set { _currentPatient = value; OnPropertyChanged(nameof(CurrentPatient)); }
+        //}
 
-        private Pacient _addPatient = new Pacient();
-        public Pacient AddPatient
-        {
-            get => _addPatient;
-            set { _addPatient = value; OnPropertyChanged(nameof(AddPatient)); }
-        }
+        //private Pacient _addPatient = new Pacient();
+        //public Pacient AddPatient
+        //{
+        //    get => _addPatient;
+        //    set { _addPatient = value; OnPropertyChanged(nameof(AddPatient)); }
+        //}
 
-        private Pacient _changePatient = new Pacient();
-        public Pacient ChangePatients
-        {
-            get => _changePatient;
-            set { _changePatient = value; OnPropertyChanged(nameof(ChangePatients)); }
-        }
+        //private Pacient _changePatient = new Pacient();
+        //public Pacient ChangePatients
+        //{
+        //    get => _changePatient;
+        //    set { _changePatient = value; OnPropertyChanged(nameof(ChangePatients)); }
+        //}
 
-        private Doctor _registerDoctrors = new Doctor();
-        public Doctor RegisterDoctrors
-        {
-            get => _registerDoctrors;
-            set { _registerDoctrors = value; OnPropertyChanged(nameof(RegisterDoctrors)); }
-        }
-
-
-        private bool AuthorizationFlag = false;
+        //private Doctor _registerDoctrors = new Doctor();
+        //public Doctor RegisterDoctrors
+        //{
+        //    get => _registerDoctrors;
+        //    set { _registerDoctrors = value; OnPropertyChanged(nameof(RegisterDoctrors)); }
+        //}
 
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-        protected void OnPropertyChanged(string propName) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
+        //private bool AuthorizationFlag = false;
+
+
+        //public event PropertyChangedEventHandler? PropertyChanged;
+        //protected void OnPropertyChanged(string propName) =>
+        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
 
         //public void RegisterDoctor()
         //{
@@ -234,6 +234,5 @@ namespace project_7.ViewModels
 
       
 
-        private int GenerateId() => new Random().Next(10000, 99999);
     }
 }

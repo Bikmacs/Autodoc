@@ -38,6 +38,34 @@ namespace project_7.Models
             }
         }
 
+        private string? _doctorName;
+        public string? DoctorName
+        {
+            get => _doctorName;
+            set
+            {
+                if (_doctorName != value)
+                {
+                    _doctorName = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string? _doctorLastName;
+        public string? DoctorLastName
+        {
+            get => _doctorLastName;
+            set
+            {
+                if (_doctorLastName != value)
+                {
+                    _doctorLastName = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private string? _diagnosis;
         public string? Diagnosis
         {

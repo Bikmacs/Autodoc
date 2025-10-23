@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
 
         <Button Content="Изменить информацию о пациенте" Width="auto" Height="30" HorizontalAlignment="Center" Margin="5" Command="{Binding SavePacientCommand}"/>
-
+        <Button Content="Назад" Height="30" HorizontalAlignment="Left" Margin="5" Command="{Binding Back}"/>
 
         <ListView Grid.Row="1" Grid.Column="1"
                     Margin="3"
@@ -44,6 +44,14 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Рекомендации: "/>
                             <TextBlock Text="{Binding Recomendations}" TextWrapping="Wrap"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Фамилия доктора: "/>
+                            <TextBlock Text="{Binding DoctorLastName }" TextWrapping="Wrap"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Имя доктора: "/>
+                            <TextBlock Text="{Binding DoctorName }" TextWrapping="Wrap"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>

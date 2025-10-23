@@ -47,7 +47,6 @@ namespace project_7.ViewModels
         public MainPageDoctorViewModel(Doctor doctor)
         {
             CurrentDoctor = doctor;
-            ListPacient();
             AddPacientCommand = new RelayCommand(_ => PageAddPacient());
 
             StartReceptionCommand = new RelayCommand(_ =>
@@ -71,7 +70,10 @@ namespace project_7.ViewModels
 
                 MainWindow.Pages?.Navigate(new PageChangePacient(SelectedPacient));
             });
-        }
+
+            ListPacient();
+        }           
+
 
         public void ListPacient()
         {
@@ -90,7 +92,8 @@ namespace project_7.ViewModels
 
         public void PageAddPacient()
         {
-            MainWindow.Pages?.Navigate(new AddPacient());
+            
+            MainWindow.Pages?.Navigate(new AddPacient(this));
         }
 
         public void PageRecep()

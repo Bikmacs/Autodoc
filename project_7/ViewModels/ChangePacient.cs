@@ -1,4 +1,5 @@
-﻿using project_7.Models;
+﻿using project_7.Commands;
+using project_7.Models;
 using project_7.Views;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace project_7.ViewModels
 {
@@ -17,6 +19,7 @@ namespace project_7.ViewModels
     {
         //Сделать обновление страницы на главном экране 
         //Переделать кнопки на команды а  именно в логине регистрации и во всех изменениях кроме истории болезней
+        public MainPageDoctorViewModel MainPage { get; set; }
 
         private Pacient _addPacient = new Pacient();
         public Pacient AddPacient
@@ -32,20 +35,33 @@ namespace project_7.ViewModels
             set { _selectedPacient = value; OnPropertyChanged(nameof(SelectedPacient)); }
         }
 
+        private Doctor _currentDoctor = new Doctor();
+        public Doctor CurrentDoctor
+        {
+            get => _currentDoctor;
+            set { _currentDoctor = value; OnPropertyChanged(nameof(CurrentDoctor)); }
+        }
+
+        public ICommand AddPacientViewCommand { get; }
+        public ICommand ChangePacBack { get; }
+        public ICommand Back { get; }
+
         public const string Directory = "Pacient";
 
 
         public ChangePacient(Pacient pacient)
         {
             AddPacient = pacient;
+            ChangePacBack = new RelayCommand(_ => ChangeByPacient());
         }
-
         public ChangePacient()
         {
             AddPacient = new Pacient
             {
                 Birthday = DateTime.Today
             };
+            AddPacientViewCommand = new RelayCommand(_ => AddPatients());
+            Back = new RelayCommand(_ => MainWindow.Pages?.GoBack());
         }
 
 
@@ -60,7 +76,17 @@ namespace project_7.ViewModels
                 Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             });
             File.WriteAllText(fileName, jsonString);
-            MessageBox.Show($"Пациент {AddPacient.Name} успешно зарегистрирован!\nID: {AddPacient.Id}");
+            MessageBoxResult result = MessageBox.Show(
+                $"Пациент {AddPacient.Name} успешно зарегистрирован!{Environment.NewLine}ID: {AddPacient.Id}",
+                "Регистрация",
+                 MessageBoxButton.OK,
+                 MessageBoxImage.Information );
+
+            if (result == MessageBoxResult.OK)
+            {
+                MainWindow.Pages?.GoBack();
+                MainPage?.PacientList.Add(AddPacient);
+            }
 
         }
 
@@ -88,7 +114,18 @@ namespace project_7.ViewModels
             });
             File.WriteAllText(fileName, jsonString);
 
-            MessageBox.Show($"Пациент {AddPacient.Name} сохранён!\nID: {AddPacient.Id}");
+            MessageBoxResult result = MessageBox.Show(
+                $"Пациент {AddPacient.Name} сохранён!",
+                "Cохранение",
+                 MessageBoxButton.OK,
+                 MessageBoxImage.Information);
+
+            if (result == MessageBoxResult.OK)
+            {
+                MainWindow.Pages?.GoBack();
+                MainPage?.PacientList.Add(AddPacient);
+            }
+
         }
 
 
