@@ -41,7 +41,7 @@ namespace project_7.Views
 
         private void RegButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new RegPage());NavigationService.Navigate(new RegPage());
+            NavigationService.Navigate(new RegPage());
         }
     }
 }

@@ -1,10 +1,4 @@
 {
-  "Id": 8780246,
-  "Name": "Вадим",
-  "LastName": "Горовой",
-  "MiddleName": "Сергеевич",
-  "Birthday": "2005-10-23T00:00:00",
-  "PhoneNumber": "+7992133221",
   "AppointmentStores": [
     {
       "Date": "2025-10-23T09:14:50.8726169+05:00",
@@ -13,6 +7,22 @@
       "DoctorLastName": "Шмелев",
       "Diagnosis": "ОРВИ",
       "Recomendations": "Таблетки пить"
+    },
+    {
+      "Date": "2025-11-06T11:34:22.7873387+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "Пятка",
+      "Recomendations": "Не ходить"
     }
-  ]
+  ],
+  "Id": 8780246,
+  "Name": "Вадим",
+  "LastName": "Горовой",
+  "MiddleName": "Сергеевич",
+  "Birthday": "2005-10-23T00:00:00",
+  "AgeFormat": "Совершеннолетний",
+  "PhoneNumber": "+7992133221",
+  "DaysSinceLastAppointment": "Сегодня"
 }

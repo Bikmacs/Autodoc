@@ -93,7 +93,9 @@ namespace project_7.Models
                 }
             }
         }
-      
+       
+
+
 
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string? propName = null)

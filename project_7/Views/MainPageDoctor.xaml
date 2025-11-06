@@ -6,81 +6,91 @@
       xmlns:local="clr-namespace:project_7.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainWindowDoctor">
+      Title="MainWindowDoctor"
+      Background="{DynamicResource WindowBackground}">
+
 
     <Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
 
-            <StackPanel Grid.Column="2" Orientation="Horizontal">
-                <Button Margin="5" Padding="5" Command="{Binding AddPacientCommand}" Content="Создать пациента" />
-                <Button Margin="5" Padding="5" Command="{Binding StartReceptionCommand}" Content="Начать приём"/>
-                <Button Margin="5" Padding="5" Command="{Binding EditPacientCommand}" Content="Изменить информацию" />
-            </StackPanel>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2"  Style="{StaticResource ButtonStackPanelStyle}">
 
-            <ListView Grid.Row="1" Grid.Column="1"
-              ItemsSource="{Binding PacientList, Mode=TwoWay}"
-              SelectedItem="{Binding SelectedPacient, Mode=TwoWay}"
-              MouseDoubleClick="EditItem_Click">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Идентификатор: "/>
-                                <TextBlock Text="{Binding Id}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Имя: "/>
-                                <TextBlock Text="{Binding Name}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Фамилия: "/>
-                                <TextBlock Text="{Binding LastName}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Отчество: "/>
-                                <TextBlock Text="{Binding MiddleName}"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="День рождение: "/>
-                                <TextBlock Text="{Binding Birthday}"/>
-                            </StackPanel>
+            <Button Command="{Binding AddPacientCommand}" Content="Создать пациента" Style="{StaticResource AddButton}"/>
+
+            <Button Command="{Binding StartReceptionCommand}" Content="Начать приём"  Style="{StaticResource StandardButton}"/>
+
+            <Button Command="{Binding EditPacientCommand}" Content="Изменить информацию"  Style="{StaticResource StandardButton}"/>
+
+        </StackPanel>
+
+        <ListView Grid.Row="1" Grid.Column="1"
+            ItemsSource="{Binding PacientList, Mode=TwoWay}"
+            SelectedItem="{Binding SelectedPacient, Mode=TwoWay}"
+            MouseDoubleClick="EditItem_Click"
+            Style="{StaticResource ListViewStyle}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Идентификатор: " Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="{Binding Id}" Style="{StaticResource TextBlockStyle}"/>
                         </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Имя: " Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="{Binding Name}" Style="{StaticResource TextBlockStyle}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Фамилия: " Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="{Binding LastName}" Style="{StaticResource TextBlockStyle}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Отчество: " Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="{Binding MiddleName}" Style="{StaticResource TextBlockStyle}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="День рождение: " Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="{Binding Birthday, StringFormat='dd.MM.yyyy'}" Style="{StaticResource TextBlockStyle}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Номер телефона:" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="{Binding PhoneNumber, StringFormat={}{0:### ### ## ##}, Mode=TwoWay}" Style="{StaticResource TextBlockStyle}"/>
+                        </StackPanel>
 
-            <TextBox Grid.Row="0" Text="Главное меню" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-            <Border Background="White" BorderBrush="Gainsboro" BorderThickness="1" Grid.Row="1">
-                <StackPanel Grid.Row="2">
-                    <TextBlock Text="Информация о текущем пользователе:" FontWeight="Bold"/>
 
-                    <TextBlock Text="Идентификатор:" Margin="0,10,0,0"/>
-                    <TextBlock Text="{Binding CurrentDoctor.Id}"/>
+        <Border BorderBrush="{DynamicResource ButtonBorder}" 
+                Grid.Row="1" Grid.Column="0">
 
-                    <TextBlock Text="Фамилия:"/>
-                    <TextBlock Text="{Binding CurrentDoctor.LastName}"/>
+            <StackPanel Style="{StaticResource InfoStackPanelStyle}">
+                <TextBlock Text="Информация о текущем пользователе:" Style="{StaticResource TitleTextBlockStyle}"/>
+                <TextBlock Text="Идентификатор:" Style="{StaticResource TextBlockStyles2}"/>
+                <TextBlock Text="{Binding CurrentDoctor.Id}" Style="{StaticResource TextBlockStyles2}"/>
 
-                    <TextBlock Text="Имя:"/>
-                    <TextBlock Text="{Binding CurrentDoctor.Name}"/>
+                <TextBlock Text="Фамилия:" Style="{StaticResource TextBlockStyles2}"/>
+                <TextBlock Text="{Binding CurrentDoctor.LastName}" Style="{StaticResource TextBlockStyles2}"/>
 
-                    <TextBlock Text="Отчество:"/>
-                    <TextBlock Text="{Binding CurrentDoctor.MiddleName}"/>
+                <TextBlock Text="Имя:" Style="{StaticResource TextBlockStyles2}"/>
+                <TextBlock Text="{Binding CurrentDoctor.Name}" Style="{StaticResource TextBlockStyles2}"/>
 
-                    <TextBlock Text="Специализация:"/>
-                    <TextBlock Text="{Binding CurrentDoctor.Specialisation}"/>
-                </StackPanel>
+                <TextBlock Text="Отчество:" Style="{StaticResource TextBlockStyles2}"/>
+                <TextBlock Text="{Binding CurrentDoctor.MiddleName}" Style="{StaticResource TextBlockStyles2}"/>
 
-            </Border>
-        </Grid>
+                <TextBlock Text="Специализация:" Style="{StaticResource TextBlockStyles2}"/>
+                <TextBlock Text="{Binding CurrentDoctor.Specialisation}" Style="{StaticResource TextBlockStyles2}"/>
+            </StackPanel>
+        </Border>
+
     </Grid>
 </Page>

@@ -36,63 +36,12 @@ namespace project_7
             MainFrame.Navigate(new LoginPage());
             DataContext = vm;
         }
-        //private void Button_Register(object sender, RoutedEventArgs e)
-        //{
-        //    vm.RegisterDoctor();
-        //    UpdateWindow();            
-        //}
-        //private void Button_Login(object sender, RoutedEventArgs e)
-        //{
-        //    int.TryParse(LoginText.Text, out int id);
-        //    vm.LoginDoctor(id, PasswordText.Password);
-        //}
-        //private void Button_Add_User(object sender, RoutedEventArgs e)
-        //{
-        //    vm.AddPatients();
-        //    UpdateWindow();
-        //}
 
-        //private void Button_Change_Patient(object sender, RoutedEventArgs e)
-        //{            
-        //    vm.ChangePatient2();
-        //}
+        private void ChangeThemeButton_Click(object sender, RoutedEventArgs e)
+        {
+            ThemeHelper.Toggle();
+        }
 
-        //private void Button_Search_User(object sender, RoutedEventArgs e)
-        //{
-        //    int.TryParse(SearchUser.Text, out int id);
-        //    vm.SearchPatient(id);
-        //}
-
-        //private void Button_Click_Reset(object sender, RoutedEventArgs e)
-        //{
-        //    vm.ReserInformationPatient();
-        //}
-
-       
-        //private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        //{
-        //    vm.RegisterDoctrors.Password = ((PasswordBox)sender).Password;
-        //}
-
-        //private void ConfirmPasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        //{
-        //    vm.RegisterDoctrors.ConfirmPassword = ((PasswordBox)sender).Password;
-        //}
-        //private void Button_Save_Patient(object sender, RoutedEventArgs e)
-        //{
-        //    vm.SavePatient(vm.CurrentPatient.LastDoctor, vm.CurrentPatient.Diagnosis, vm.CurrentPatient.Recomendations);
-        //}
-
-        //public void UpdateWindow()
-        //{
-        //    int filePacient = Directory.GetFiles(".", "P_*.json").Length;
-        //    int fileDoctors = Directory.GetFiles(".", "D_*.json").Length;
-        //    status.Text = $"Пациентов: {filePacient.ToString()}";
-        //    qual.Text = $"Докторов: {fileDoctors.ToString()}";
-        //}
-
-      
-        
     }
 
 }

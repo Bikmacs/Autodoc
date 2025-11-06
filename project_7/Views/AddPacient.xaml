@@ -4,47 +4,120 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:project_7.Views"
+      xmlns:validators="clr-namespace:project_7.ValidationRules"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddPacient">
-
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+      Title="AddPacient"
+      Background="{DynamicResource WindowBackground}">
+    <Grid Style="{StaticResource FormGridStyle2}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="165"/>
             <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Форма добавления пациента" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+        <Label Content="Имя" Style="{StaticResource LabelStyle}" Grid.Row="1"/>
 
-        <Label Content="Имя" Grid.Row="1" Grid.Column="0"/>
-        <TextBox x:Name="AddName" Text="{Binding AddPacient.Name}" Grid.Row="1" Grid.Column="1"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" Style="{StaticResource FormStackPanelStyle2}">
+            <TextBox x:Name="AddName" Grid.Row="1" Grid.Column="1" Style="{StaticResource FormTextBoxStyle2}" >
+                <TextBox.Text>
+                    <Binding Path="AddPacient.Name" UpdateSourceTrigger="PropertyChanged" >
+                        <Binding.ValidationRules>
+                            <validators:RequiredRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=AddName, Path=(Validation.Errors)}" Foreground="Red" FontSize="10" Grid.Row="1" Grid.Column="1">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
 
-        <Label Content="Фамилия" Grid.Row="2" Grid.Column="0"/>
-        <TextBox x:Name="AddLastName" Text="{Binding AddPacient.LastName}" Grid.Row="2" Grid.Column="1"/>
+        <Label Content="Фамилия" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+        <StackPanel Grid.Column="1" Grid.Row="2" Style="{StaticResource FormStackPanelStyle2}">
+            <TextBox x:Name="AddLastName" Grid.Row="2" Grid.Column="1" Style="{StaticResource FormTextBoxStyle2}" >
+                <TextBox.Text>
+                    <Binding Path="AddPacient.LastName" UpdateSourceTrigger="PropertyChanged" >
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=AddLastName, Path=(Validation.Errors)}" Foreground="Red" FontSize="10" Grid.Row="2" Grid.Column="1">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
 
-        <Label Content="Отчество" Grid.Row="3" Grid.Column="0"/>
-        <TextBox x:Name="AddMiddleName" Text="{Binding AddPacient.MiddleName}" Grid.Row="3" Grid.Column="1"/>
+        <Label Content="Отчество" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+        <StackPanel Grid.Column="1" Grid.Row="3"  Style="{StaticResource FormStackPanelStyle2}">
+            <TextBox x:Name="AddMiddleName" Grid.Row="3" Grid.Column="1" Style="{StaticResource FormTextBoxStyle2}">
+                <TextBox.Text>
+                    <Binding Path=" AddPacient.MiddleName" UpdateSourceTrigger="PropertyChanged" >
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=AddMiddleName, Path=(Validation.Errors)}" Foreground="Red" FontSize="9" Grid.Row="3" Grid.Column="1">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+       
 
-        <Label Content="День Рождения" Grid.Row="4" Grid.Column="0"/>
+
+        <Label Content="День Рождения" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
         <DatePicker SelectedDate="{Binding AddPacient.Birthday, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-            Grid.Row="4" VerticalAlignment="Center" Grid.Column="1"/>
+                    Grid.Row="4" Grid.Column="1" Style="{StaticResource DatePickerStyle}"/>
 
-        <Label Content="Номер телефона" Grid.Row="5" Grid.Column="0"/>
-        <TextBox Text="{Binding AddPacient.PhoneNumber}" Grid.Row="5" Grid.Column="1"/>
+        <Label Content="Номер телефона:" Style="{StaticResource LabelStyle}" Grid.Row="5"/>
+        <StackPanel Grid.Column="1" Grid.Row="5" Style="{StaticResource FormStackPanelStyle2}">
+            <TextBox x:Name="NumberPhone" Grid.Row="5" Grid.Column="1" Style="{StaticResource FormTextBoxStyle2}" >
+                <TextBox.Text>
+                    <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged" >
+                        <Binding.ValidationRules>
+                            <validators:RequiredRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=NumberPhone, Path=(Validation.Errors)}" Foreground="Red" Grid.Row="5" Grid.Column="1">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+        
 
+        <Button Content="Добавить пациента" Grid.Row="6" Grid.Column="0" 
+                Style="{StaticResource AddButton}" 
+                Command="{Binding AddPacientViewCommand}"/>
 
-        <Button Content="Добавить пациента" Grid.Row="6" Margin="5" Grid.Column="0" Width="200" Height="25" Command="{Binding AddPacientViewCommand}" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-
-        <Button Content="Назад" Height="30" Grid.Row="6" HorizontalAlignment="Left" Margin="5" Command="{Binding Back}"/>
+        <Button Content="Назад" Grid.Row="6" Grid.Column="1" Command="{Binding Back}"  Style="{StaticResource StandardButton}" />
 
     </Grid>
 </Page>

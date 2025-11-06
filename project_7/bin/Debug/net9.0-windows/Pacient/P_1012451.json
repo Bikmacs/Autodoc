@@ -1,0 +1,36 @@
+{
+  "AppointmentStores": [
+    {
+      "Date": "2025-11-06T11:09:00.0115414+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "выф",
+      "Recomendations": "фыв"
+    },
+    {
+      "Date": "2025-11-06T11:21:06.6209774+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "asd",
+      "Recomendations": "asd"
+    },
+    {
+      "Date": "2025-11-06T11:37:06.7219611+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": null,
+      "Recomendations": null
+    }
+  ],
+  "Id": 1012451,
+  "Name": null,
+  "LastName": "с",
+  "MiddleName": "с",
+  "Birthday": "2000-11-06T00:00:00",
+  "AgeFormat": "Совершеннолетний",
+  "PhoneNumber": "890023456",
+  "DaysSinceLastAppointment": "Сегодня"
+}

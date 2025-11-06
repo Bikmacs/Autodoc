@@ -4,5 +4,14 @@
              xmlns:local="clr-namespace:project_7"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Colors/DefaultColors.xaml"/>
+
+                <ResourceDictionary Source="/Styles/UI/Button.xaml"/>
+
+                <ResourceDictionary Source="/Styles/UI/FormControls.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

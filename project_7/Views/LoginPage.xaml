@@ -4,38 +4,69 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:project_7.Views"
+      xmlns:validators="clr-namespace:project_7.ValidationRules"
       mc:Ignorable="d" 
-      d:DesignHeight="270" d:DesignWidth="400"
-      Title="LoginPage">
+      d:DesignHeight="270" d:DesignWidth="300"
+      Title="LoginPage"
+      Background="{DynamicResource WindowBackground}">
 
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid Style="{StaticResource FormGridStyle}">
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="210"/>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
-        <Label Content="Авторизация" Grid.ColumnSpan="2" FontWeight="Bold" HorizontalAlignment="Center"/>
 
-        <StackPanel VerticalAlignment="Center">
-            <Label Content="Идентификатор"/>
-            <Label Content="Пароль"/>
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Авторизация" Style="{StaticResource FormTitleLabelStyle}"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStackPanelStyle}">
+            <Label Content="Идентификатор" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Пароль" Style="{StaticResource LabelStyle}"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" VerticalAlignment="Center">
-            <TextBox Text="{Binding LoginDoctor.Id, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-            <PasswordBox PasswordChanged="PasswordBox_PasswordChanged" Margin="5"/>
+        <StackPanel Grid.Row="1" Grid.Column="1" Style="{StaticResource ControlsStackPanelStyle}">
 
+            <TextBox x:Name="idTextBox" Style="{StaticResource FormTextBoxStyle2}">
+                <TextBox.Text>
+                    <Binding Path="LoginDoctor.Id" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:RequiredRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            
+            <ItemsControl Grid.Row="2" Grid.Column="1" Foreground="Red"
+                ItemsSource="{Binding ElementName=idTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+
+            <PasswordBox x:Name="passwordBox" PasswordChanged="PasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Height="50" Grid.ColumnSpan="2" HorizontalAlignment="Center">
-            <Button Width="150" Content="Зарегистрироваться" Click="RegButton_Click" />
-            <Button Content="Войти" Click="LoginButton_Click"/>
-        </StackPanel>
-        
+        <ItemsControl Grid.Row="3" Grid.Column="1" Foreground="Red"
+                      ItemsSource="{Binding ElementName=passwordBox, Path=(Validation.Errors)}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <Button Grid.Column="1" Grid.Row="4" Content="Зарегистрироваться" Click="RegButton_Click" Style="{StaticResource StandardButton}"/>
+        <Button Grid.Column="0" Grid.Row="4" Content="Войти" Click="LoginButton_Click" Style="{StaticResource StandardButton}"/>
+
     </Grid>
 </Page>

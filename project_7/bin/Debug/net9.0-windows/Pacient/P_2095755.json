@@ -1,9 +1,10 @@
 {
   "Id": 2095755,
   "Name": "Максим",
-  "LastName": "Брутальный",
-  "MiddleName": "Вадимович",
+  "LastName": "Шмелев",
+  "MiddleName": "Константинович",
   "Birthday": "2025-10-23T00:00:00+05:00",
+  "AgeFormat": "Несовершеннолетний",
   "PhoneNumber": "+79221465339",
   "AppointmentStores": [
     {
@@ -12,7 +13,8 @@
       "DoctorName": "Максим",
       "DoctorLastName": "Шмелев",
       "Diagnosis": "фыв",
-      "Recomendations": "ыв"
+      "Recomendations": "ыв",
+      "Last": "14 дней назад"
     },
     {
       "Date": "2025-10-23T09:16:44.2850821+05:00",
@@ -20,7 +22,8 @@
       "DoctorName": "Максим",
       "DoctorLastName": "Шмелев",
       "Diagnosis": null,
-      "Recomendations": null
+      "Recomendations": null,
+      "Last": "14 дней назад"
     },
     {
       "Date": "2025-10-23T09:20:46.5900736+05:00",
@@ -28,7 +31,8 @@
       "DoctorName": "Максим",
       "DoctorLastName": "Шмелев",
       "Diagnosis": "уйц",
-      "Recomendations": "йцу"
+      "Recomendations": "йцу",
+      "Last": "14 дней назад"
     },
     {
       "Date": "2025-10-23T09:37:09.6575581+05:00",
@@ -36,7 +40,44 @@
       "DoctorName": "Максим",
       "DoctorLastName": "Шмелев",
       "Diagnosis": "jjj",
-      "Recomendations": "jjjj"
+      "Recomendations": "jjjj",
+      "Last": "14 дней назад"
+    },
+    {
+      "Date": "2025-11-04T14:02:25.1533595+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": null,
+      "Recomendations": null,
+      "Last": "2 дней назад"
+    },
+    {
+      "Date": "2025-11-06T10:12:18.9214604+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": null,
+      "Recomendations": null,
+      "Last": "0 дней назад"
+    },
+    {
+      "Date": "2025-11-06T10:45:23.6106408+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": null,
+      "Recomendations": null,
+      "Last": "0 дней назад"
+    },
+    {
+      "Date": "2025-11-06T10:48:46.4011626+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "ТАк так так",
+      "Recomendations": "Граммидин",
+      "Last": "0 дней назад"
     }
   ]
 }

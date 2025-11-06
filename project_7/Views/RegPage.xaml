@@ -4,47 +4,79 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:project_7.Views"
+      xmlns:validators="clr-namespace:project_7.ValidationRules"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="400"
-      Title="RegPage">
-
-    <Grid>
+      Title="RegPage"
+      Background="{DynamicResource WindowBackground}">
+    <Grid Style="{StaticResource FormGridStyle}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition/>
             <RowDefinition Height="200"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Форма добавления пациента" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+        <Label Content="Форма добавления пациента" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource FormTitleLabelStyle}"/>
 
-        <StackPanel  Grid.Row="1">
-            <Label Content="Имя"/>
-            <Label Content="Фамилия"/>
-            <Label Content="Отчество"/>
-            <Label Content="Специализация"/>
-            <Label Content="Пароль"/>
-            <Label Content="Подтверждение"/>
-            <Label Content="Идентификатор"/>
+        <StackPanel Grid.Row="1" Style="{StaticResource LabelStackPanelStyle}">
+            <Label Content="Имя" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Фамилия" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Отчество" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Специализация" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Пароль" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Подтверждение" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Идентификатор" Style="{StaticResource LabelStyle}"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <TextBox Margin="5" Text="{Binding RegisterDoctors.Name}"/>
-            <TextBox Margin="5" Text="{Binding RegisterDoctors.LastName}"/>
-            <TextBox Margin="5" Text="{Binding RegisterDoctors.MiddleName}"/>
-            <TextBox Margin="5" Text="{Binding RegisterDoctors.Specialisation}"/>
-            <PasswordBox Margin="5" PasswordBox.PasswordChanged="PasswordBox_PasswordChanged"/>
-            <PasswordBox Margin="5" PasswordBox.PasswordChanged="ConfirmPasswordBox_PasswordChanged"/>
-            <Label FontSize="14" Content="{Binding RegisterDoctors.Id}"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Style="{StaticResource ControlsStackPanelStyle}">
+            <TextBox Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="RegisterDoctors.Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                        <Binding.ValidationRules>
+                            <validators:RequiredTextRule/>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+            <TextBox Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="RegisterDoctors.LastName" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                        <Binding.ValidationRules>
+                            <validators:RequiredTextRule/>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+            <TextBox Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="RegisterDoctors.MiddleName" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+            <TextBox Text="{Binding RegisterDoctors.Specialisation}" Style="{StaticResource FormTextBoxStyle}"/>
+            <PasswordBox PasswordChanged="PasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}"/>
+            <PasswordBox PasswordChanged="ConfirmPasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}"/>
+            <Label Content="{Binding RegisterDoctors.Id}" Style="{StaticResource LabelStyle}"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="2"  Grid.ColumnSpan="2" HorizontalAlignment="Center">
-            <Button Width="150" Content="Зарегистрироваться" Click="Button_Register" />
-            <Button Content="Войти" Click="Button_Login"/>
+
+
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource ButtonPanelStyle}" Orientation="Horizontal">
+            <Button Content="Зарегистрироваться" Click="Button_Register" Style="{StaticResource AddButton}"/>
+            <Button Content="Войти" Click="Button_Login"  Style="{StaticResource StandardButton}"/>
         </StackPanel>
     </Grid>
 </Page>

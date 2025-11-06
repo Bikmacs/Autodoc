@@ -104,13 +104,18 @@ namespace project_7.ViewModels
 
                     var appoinments = new AppointmentStories
                     {
+                        
                         Date = DateTime.Now,
                         DoctorId = CurrentDoctor?.Id,
                         DoctorLastName = CurrentDoctor?.LastName,
                         DoctorName = CurrentDoctor?.Name,
                         Diagnosis = Appointment?.Diagnosis, 
                         Recomendations = Appointment?.Recomendations,
+                       
+                        
                     };
+
+                   
 
                     oldPacient.AppointmentStores.Add(appoinments);
 

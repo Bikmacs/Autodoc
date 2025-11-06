@@ -34,8 +34,9 @@ namespace project_7.Views
         {
         }
 
-        private void Button_Save_Pacient(object sender, RoutedEventArgs e)
+        private void DiagnosisBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+
         }
     }
 }

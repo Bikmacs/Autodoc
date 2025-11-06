@@ -92,7 +92,6 @@ namespace project_7.ViewModels
 
         public void PageAddPacient()
         {
-            
             MainWindow.Pages?.Navigate(new AddPacient(this));
         }
 

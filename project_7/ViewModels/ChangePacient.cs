@@ -17,9 +17,9 @@ namespace project_7.ViewModels
 {
     public class ChangePacient : INotifyPropertyChanged
     {
-        //Сделать обновление страницы на главном экране 
-        //Переделать кнопки на команды а  именно в логине регистрации и во всех изменениях кроме истории болезней
         public MainPageDoctorViewModel MainPage { get; set; }
+
+        
 
         private Pacient _addPacient = new Pacient();
         public Pacient AddPacient
