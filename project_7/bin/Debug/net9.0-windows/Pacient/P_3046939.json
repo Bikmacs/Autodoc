@@ -1,0 +1,11 @@
+{
+  "AppointmentStores": [],
+  "Id": 3046939,
+  "Name": "s",
+  "LastName": "s",
+  "MiddleName": "s",
+  "Birthday": "2025-11-09T00:00:00+05:00",
+  "AgeFormat": "Несовершеннолетний",
+  "PhoneNumber": "123",
+  "DaysSinceLastAppointment": "Первый прием в клинике"
+}

@@ -98,6 +98,11 @@ namespace project_7.Models
         {
             get
             {
+                if (!Birthday.HasValue)
+                {
+                    return "Дата не указана"; 
+                }
+
                 DateTime now = DateTime.Today;
                 DateTime birthDate = Birthday.Value.Date;
                 int age = now.Year - birthDate.Year;

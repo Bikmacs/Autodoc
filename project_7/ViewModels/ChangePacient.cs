@@ -28,8 +28,8 @@ namespace project_7.ViewModels
             set { _addPacient = value; OnPropertyChanged(nameof(AddPacient)); }
         }
 
-        private Pacient SelectedPacient = new Pacient();
-        public Pacient _selectedPacient
+        private Pacient _selectedPacient = new Pacient();
+        public Pacient SelectedPacient
         {
             get => _selectedPacient;
             set { _selectedPacient = value; OnPropertyChanged(nameof(SelectedPacient)); }

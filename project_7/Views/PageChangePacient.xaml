@@ -9,89 +9,88 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageChangePacient"
       Background="{DynamicResource WindowBackground}">
-    <Grid Style="{StaticResource FormGridStyle}">
-        <Border Background="{DynamicResource WindowBackground}" 
+    <Border Background="{DynamicResource WindowBackground}" 
                 BorderBrush="{DynamicResource ButtonBorder}" 
-                BorderThickness="1">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+                Style="{DynamicResource PageBorder}"
+                Grid.ColumnSpan="2">
+        <Grid Style="{DynamicResource FormGridStyle3}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <Label Content="Форма изменения информации о клиенте" Grid.Row="0" Grid.ColumnSpan="2" 
+            <Label Content="Форма изменения информации о клиенте" Grid.Row="0" Grid.ColumnSpan="2" 
                        Style="{StaticResource FormTitleLabelStyle}"/>
 
-                <Label Content="Фамилия:" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-                <TextBox x:Name="LastName" Grid.Row="1" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                    <TextBox.Text>
-                        <Binding Path="AddPacient.LastName" UpdateSourceTrigger="PropertyChanged">
-                            <Binding.ValidationRules>
-                                <validators:TextOnlyRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+            <Label Content="Фамилия:" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+            <TextBox x:Name="LastName" Grid.Row="1" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="AddPacient.LastName" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
-                <Label Content="Имя:" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-                <TextBox x:Name="Name" Grid.Row="2" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                    <TextBox.Text>
-                        <Binding Path="AddPacient.Name" UpdateSourceTrigger="PropertyChanged">
-                            <Binding.ValidationRules>
-                                <validators:TextOnlyRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+            <Label Content="Имя:" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+            <TextBox x:Name="Name" Grid.Row="2" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="AddPacient.Name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
-                <Label Content="Отчество:" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-                <TextBox x:Name="MiddleName" Grid.Row="3" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                    <TextBox.Text>
-                        <Binding Path="AddPacient.MiddleName" UpdateSourceTrigger="PropertyChanged">
-                            <Binding.ValidationRules>
-                                <validators:TextOnlyRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+            <Label Content="Отчество:" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+            <TextBox x:Name="MiddleName" Grid.Row="3" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="AddPacient.MiddleName" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
-                <Label Content="День Рождения:" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-                <DatePicker x:Name="Birthday" SelectedDate="{Binding AddPacient.Birthday, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+            <Label Content="День Рождения:" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+            <DatePicker x:Name="Birthday" SelectedDate="{Binding AddPacient.Birthday, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                             Grid.Row="4" Grid.Column="1" Style="{StaticResource DatePickerStyle}"/>
 
-                <Label Content="Номер телефона:" Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-                <TextBox x:Name="Phone" Grid.Row="5" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                    <TextBox.Text>
-                        <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged">
-                            <Binding.ValidationRules>
-                                <validators:RequiredTextRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+            <Label Content="Номер телефона:" Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+            <TextBox x:Name="Phone" Grid.Row="5" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:RequiredTextRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
-                <ItemsControl Grid.Row="6" Grid.Column="1" Foreground="Red" 
+            <ItemsControl Grid.Row="6" Grid.Column="1" Foreground="Red" 
                               ItemsSource="{Binding ElementName=Phone, Path=(Validation.Errors)}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
 
-                <Button Grid.Column="1" Grid.Row="7" Content="Изменить информацию" Command="{Binding ChangePacBack}" Style="{StaticResource AddButton}"/>
-                <Button Grid.Column="0" Grid.Row="7" Content="Сбросить" Style="{StaticResource DeleteButton}" Click="Button_Click_Reset"/>
-            </Grid>
-        </Border>
-    </Grid>
+            <Button Grid.Column="1" Grid.Row="7" Content="Изменить информацию" Command="{Binding ChangePacBack}" Style="{StaticResource AddButton}"/>
+            <Button Grid.Column="0" Grid.Row="7" Content="Сбросить" Style="{StaticResource DeleteButton}" Click="Button_Click_Reset"/>
+        </Grid>
+    </Border>
 </Page>

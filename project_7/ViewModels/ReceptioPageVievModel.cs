@@ -90,48 +90,36 @@ namespace project_7.ViewModels
 
         public void SavePacient()
         {
-            string fileName = Path.Combine(ChangePacient.Directory, $"P_{CurrentPatient.Id}.json");
+            if (CurrentPatient == null) return;
 
-            if (File.Exists(fileName))
+            var appoinment = new AppointmentStories
             {
-                var oldPacient = JsonSerializer.Deserialize<Pacient>(File.ReadAllText(fileName));
-                if (oldPacient != null)
-                {
-                    if (Appointment == null)
-                    {
-                        Appointment = new AppointmentStories();
-                    }
+                Date = DateTime.Now,
+                DoctorId = CurrentDoctor?.Id,
+                DoctorLastName = CurrentDoctor?.LastName,
+                DoctorName = CurrentDoctor?.Name,
+                Diagnosis = Appointment?.Diagnosis,
+                Recomendations = Appointment?.Recomendations
+            };
 
-                    var appoinments = new AppointmentStories
-                    {
-                        
-                        Date = DateTime.Now,
-                        DoctorId = CurrentDoctor?.Id,
-                        DoctorLastName = CurrentDoctor?.LastName,
-                        DoctorName = CurrentDoctor?.Name,
-                        Diagnosis = Appointment?.Diagnosis, 
-                        Recomendations = Appointment?.Recomendations,
-                       
-                        
-                    };
+            CurrentPatient.AppointmentStores.Add(appoinment);
 
-                   
+            string fileName = Path.Combine(ChangePacient.Directory, $"P_{CurrentPatient.Id}.json");
+            string jsonString = JsonSerializer.Serialize(CurrentPatient, new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+            });
+            File.WriteAllText(fileName, jsonString);
 
-                    oldPacient.AppointmentStores.Add(appoinments);
+            MessageBox.Show($"Пациент {CurrentPatient.Name} сохранен!\nID: {CurrentPatient.Id}");
 
-                    string jsonString = JsonSerializer.Serialize(oldPacient, new JsonSerializerOptions
-                    {
-                        WriteIndented = true,
-                        Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-                    });
-                    File.WriteAllText(fileName, jsonString);
-                    MessageBox.Show($"Пациент {CurrentPatient.Name} сохранен!\nID: {CurrentPatient.Id}");
-                    UpdateHistory();
-                }
-            }
-
-
+            UpdateHistory();
         }
+
+
+
+        
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged(string propName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
