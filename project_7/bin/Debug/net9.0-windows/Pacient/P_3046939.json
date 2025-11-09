@@ -1,5 +1,14 @@
 {
-  "AppointmentStores": [],
+  "AppointmentStores": [
+    {
+      "Date": "2025-11-09T18:20:25.3982838+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "sd",
+      "Recomendations": "sd"
+    }
+  ],
   "Id": 3046939,
   "Name": "s",
   "LastName": "s",
@@ -7,5 +16,5 @@
   "Birthday": "2025-11-09T00:00:00+05:00",
   "AgeFormat": "Несовершеннолетний",
   "PhoneNumber": "123",
-  "DaysSinceLastAppointment": "Первый прием в клинике"
+  "DaysSinceLastAppointment": "Сегодня"
 }

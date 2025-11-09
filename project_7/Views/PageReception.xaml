@@ -39,7 +39,9 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Border Grid.Row="1" Grid.Column="0" Background="{DynamicResource WindowBackground}" BorderBrush="{DynamicResource ButtonBorder}">
+        <Border BorderBrush="{DynamicResource ButtonBorder}" Style="{StaticResource PageBorderInfo}" 
+    Grid.Row="1" Grid.Column="0">
+
             <ScrollViewer VerticalScrollBarVisibility="Auto" Style="{StaticResource ScrollViewerStyle}">
                 <StackPanel Style="{StaticResource FormStackPanelStyle}">
                     <TextBlock Text="Форма приёма пациента:" Style="{StaticResource FormTitleTextBlockStyle}" FontWeight="Bold"/>
@@ -76,7 +78,7 @@
                         <TextBox.Text>
                             <Binding Path="Appointment.Diagnosis" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
-                                    <validators:RequiredTextRule/>
+                                    <validators:TextOnlyRule/>
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
@@ -94,7 +96,7 @@
                         <TextBox.Text>
                             <Binding Path="Appointment.Recomendations" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
-                                    <validators:RequiredTextRule/>
+                                    <validators:TextOnlyRule/>
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>

@@ -10,7 +10,7 @@
       Title="LoginPage"
       Background="{DynamicResource WindowBackground}">
 
-    <Grid Style="{StaticResource FormGridStyle}">
+    <Grid Style="{StaticResource FormGridStyle4}">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -20,16 +20,15 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
 
         <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Авторизация" Style="{StaticResource FormTitleLabelStyle}"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="Идентификатор" Style="{StaticResource LabelStyle}" VerticalAlignment="Top" Margin="0,5,0,0"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Идентификатор" Style="{StaticResource LabelStyle}" VerticalAlignment="Top" />
 
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <TextBox x:Name="idTextBox" Style="{StaticResource FormTextBoxStyle2}" Height="25">
+            <TextBox x:Name="idTextBox" Style="{StaticResource FormTextBoxStyle2}">
                 <TextBox.Text>
                     <Binding Path="LoginDoctor.Id" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -49,7 +48,7 @@
         </StackPanel>
 
 
-        <Label Grid.Row="2" Grid.Column="0" Content="Пароль" Style="{StaticResource LabelStyle}" VerticalAlignment="Top" Margin="0,5,0,0"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Пароль" Style="{StaticResource LabelStyle}" VerticalAlignment="Top"/>
 
         <StackPanel Grid.Row="2" Grid.Column="1">
             <PasswordBox x:Name="passwordBox" PasswordChanged="PasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}" />
@@ -65,8 +64,9 @@
         </StackPanel>
 
 
-        <Button Grid.Column="0" Grid.Row="4" Content="Зарегистрироваться" Click="RegButton_Click" Style="{StaticResource StandardButton}" Margin="0,15,5,0"/>
-        <Button Grid.Column="1" Grid.Row="4" Content="Войти" Click="LoginButton_Click" Style="{StaticResource StandardButton}" Margin="5,15,0,0"/>
+        <Button Grid.Column="0" Grid.Row="5" Content="Зарегистрироваться" Click="RegButton_Click" Style="{StaticResource StandardButton}"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="Войти" Click="LoginButton_Click" Style="{StaticResource StandardButton}" />
 
     </Grid>
 </Page>
+    

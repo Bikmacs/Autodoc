@@ -94,6 +94,7 @@ namespace project_7.ViewModels
 
             var appoinment = new AppointmentStories
             {
+
                 Date = DateTime.Now,
                 DoctorId = CurrentDoctor?.Id,
                 DoctorLastName = CurrentDoctor?.LastName,

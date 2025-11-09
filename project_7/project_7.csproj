@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Styles\Theme\" />
+    <Compile Remove="Styles\Theme\**" />
+    <EmbeddedResource Remove="Styles\Theme\**" />
+    <None Remove="Styles\Theme\**" />
+    <Page Remove="Styles\Theme\**" />
   </ItemGroup>
 
   <ItemGroup>

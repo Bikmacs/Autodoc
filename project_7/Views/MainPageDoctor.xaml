@@ -11,8 +11,8 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40*"/>
-            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -29,12 +29,12 @@
 
         <Border BorderBrush="{DynamicResource ButtonBorder}" 
                 Style="{StaticResource PageBorderInfo}"
-                BorderThickness="1" CornerRadius="5"
+
                 Grid.Row="1" Grid.Column="0">
 
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="140"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
@@ -104,8 +104,6 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Grid.Row="2" Grid.Column="0" Content="Выход" Command="{Binding LogoutCommand}" HorizontalAlignment="Left" Margin="10,0" Style="{StaticResource StandardButton}"/>
-        <Label Grid.Row="2" Grid.Column="1" Content="Status: Ready" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10,0"/>
-
+      
     </Grid>
 </Page>

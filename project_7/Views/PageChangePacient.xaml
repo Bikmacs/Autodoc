@@ -74,14 +74,13 @@
                 <TextBox.Text>
                     <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
-                            <validators:RequiredTextRule/>
+                            <validators:PhoneNumberRule/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>
             </TextBox>
 
-            <ItemsControl Grid.Row="6" Grid.Column="1" Foreground="Red" 
-                              ItemsSource="{Binding ElementName=Phone, Path=(Validation.Errors)}">
+            <ItemsControl Grid.Row="6" Grid.Column="1" Foreground="Red" ItemsSource="{Binding ElementName=Phone, Path=(Validation.Errors)}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
@@ -89,7 +88,7 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
 
-            <Button Grid.Column="1" Grid.Row="7" Content="Изменить информацию" Command="{Binding ChangePacBack}" Style="{StaticResource AddButton}"/>
+            <Button Grid.Column="1" Grid.Row="7" Content=" Изменить" Command="{Binding ChangePacBack}" Style="{StaticResource AddButton}"/>
             <Button Grid.Column="0" Grid.Row="7" Content="Сбросить" Style="{StaticResource DeleteButton}" Click="Button_Click_Reset"/>
         </Grid>
     </Border>

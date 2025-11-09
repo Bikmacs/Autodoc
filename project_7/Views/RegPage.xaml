@@ -37,7 +37,6 @@
                 <TextBox.Text>
                     <Binding Path="RegisterDoctors.Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
                         <Binding.ValidationRules>
-                            <validators:RequiredTextRule/>
                             <validators:TextOnlyRule/>
                         </Binding.ValidationRules>
                     </Binding>
@@ -48,7 +47,6 @@
                 <TextBox.Text>
                     <Binding Path="RegisterDoctors.LastName" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
                         <Binding.ValidationRules>
-                            <validators:RequiredTextRule/>
                             <validators:TextOnlyRule/>
                         </Binding.ValidationRules>
                     </Binding>
