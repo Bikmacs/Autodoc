@@ -11,7 +11,7 @@
       Background="{DynamicResource WindowBackground}">
     <Grid Style="{StaticResource FormGridStyle}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition />
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
@@ -21,8 +21,8 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="175"/>
         </Grid.ColumnDefinitions>
 
         <Label Content="Имя" Style="{StaticResource LabelStyle}" Grid.Row="1"/>
@@ -110,10 +110,10 @@
         </StackPanel>
 
         <Button Content="Добавить" Grid.Row="6" Grid.Column="0" 
-                Style="{StaticResource AddButton}" 
+                Style="{DynamicResource MaterialDesignRaisedButton}" 
                 Command="{Binding AddPacientViewCommand}"/>
 
-        <Button Content="Назад" Grid.Row="6" Grid.Column="1" Command="{Binding Back}" Style="{StaticResource StandardButton}" />
+        <Button Content="Назад" Grid.Row="6" Grid.Column="1" Command="{Binding Back}" Style="{DynamicResource MaterialDesignRaisedButton}" />
 
     </Grid>
 </Page>

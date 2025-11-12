@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PdxDrNKuBDc=",
+  "dgSpecHash": "u/nLIcrE44I=",
   "success": true,
-  "projectFilePath": "C:\\Учеба\\C#\\TRPO\\asd\\Autodoc\\project_7\\project_7.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\project_7.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\smele\\.nuget\\packages\\materialdesigncolors\\5.3.0\\materialdesigncolors.5.3.0.nupkg.sha512",
+    "C:\\Users\\smele\\.nuget\\packages\\materialdesignthemes\\5.3.0\\materialdesignthemes.5.3.0.nupkg.sha512",
+    "C:\\Users\\smele\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+  ],
   "logs": []
 }

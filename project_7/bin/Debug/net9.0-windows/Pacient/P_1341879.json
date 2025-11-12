@@ -7,12 +7,28 @@
       "DoctorLastName": "Шмелев",
       "Diagnosis": "фыв",
       "Recomendations": "фыв"
+    },
+    {
+      "Date": "2025-11-09T19:00:02.7642283+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": "wq",
+      "Recomendations": "qw"
+    },
+    {
+      "Date": "2025-11-12T19:37:33.8729377+05:00",
+      "DoctorId": 68997,
+      "DoctorName": "Максим",
+      "DoctorLastName": "Шмелев",
+      "Diagnosis": null,
+      "Recomendations": null
     }
   ],
   "Id": 1341879,
-  "Name": "ф",
-  "LastName": "ф",
-  "MiddleName": "ф",
+  "Name": "фqwe",
+  "LastName": "фqwe",
+  "MiddleName": "фqweq",
   "Birthday": "2025-11-09T00:00:00+05:00",
   "AgeFormat": "Несовершеннолетний",
   "PhoneNumber": "123123123",

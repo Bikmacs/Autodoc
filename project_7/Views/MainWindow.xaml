@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:project_7" 
         mc:Ignorable="d"
         Title="Приём пациентов" Height="520" Width="1100"
+        Style="{StaticResource MaterialDesignWindow}"
         
         Background="{DynamicResource WindowBackground}">
 

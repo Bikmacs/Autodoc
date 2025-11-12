@@ -22,7 +22,7 @@
 
         <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource ButtonStackPanelStyle}"
                     Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Command="{Binding AddPacientCommand}" Content="Создать" Style="{StaticResource AddButton}" Margin="10,0"/>
+            <Button Command="{Binding AddPacientCommand}" Content="Создать" Style="{DynamicResource AddButton}" Margin="10,0"/>
             <Button Command="{Binding StartReceptionCommand}" Content="Начать приём" Style="{StaticResource StandardButton}" Margin="10,0"/>
             <Button Command="{Binding EditPacientCommand}" Content="Изменить информацию" Style="{StaticResource StandardButton}" Margin="10,0"/>
         </StackPanel>

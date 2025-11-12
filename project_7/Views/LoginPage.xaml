@@ -64,8 +64,8 @@
         </StackPanel>
 
 
-        <Button Grid.Column="0" Grid.Row="5" Content="Зарегистрироваться" Click="RegButton_Click" Style="{StaticResource StandardButton}"/>
-        <Button Grid.Column="1" Grid.Row="5" Content="Войти" Click="LoginButton_Click" Style="{StaticResource StandardButton}" />
+        <Button Grid.Column="0" Grid.Row="5" Content="Зарегистрироваться" Click="RegButton_Click" Style="{DynamicResource MaterialDesignRaisedButton}"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="Войти" Click="LoginButton_Click" Style="{DynamicResource MaterialDesignRaisedButton}" />
 
     </Grid>
 </Page>
