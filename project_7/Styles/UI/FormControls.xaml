@@ -15,6 +15,7 @@
     <Style x:Key="FormTextBoxStyle" TargetType="TextBox">
         <Setter Property="Margin" Value="5"/>
         <Setter Property="Width" Value="160"/>
+        <Setter Property="AutomationProperties.Name" Value="Input Field"/>
     </Style>
 
     <Style x:Key="FormTextBoxStyle2" TargetType="TextBox">
@@ -22,14 +23,14 @@
         <Setter Property="Margin" Value="5"/>
         <Setter Property="Width" Value="160"/>
         <Setter Property="Height" Value="20"/>
+        <Setter Property="AutomationProperties.Name" Value="Input Field"/>
     </Style>
-
 
     <Style x:Key="SmallTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource FormTextBoxStyle}">
         <Setter Property="Width" Value="155"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
     </Style>
-     
+
     <Style x:Key="LargeTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource FormTextBoxStyle}">
         <Setter Property="Height" Value="52"/>
         <Setter Property="Width" Value="200"/>
@@ -46,7 +47,7 @@
     </Style>
      
     <Style x:Key="DatePickerStyle" TargetType="DatePicker">
-        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="5"/>
         <Setter Property="Width" Value="160" />
     </Style>
@@ -113,7 +114,6 @@
     <Style x:Key="FormStackPanelStyle" TargetType="StackPanel">
         <Setter Property="Margin" Value="5"/>
         <Setter Property="Width" Value="365"/>
-        <Setter Property="Background" Value="White"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
     </Style>
 
@@ -131,8 +131,9 @@
     </Style>
     <Style x:Key="ControlsStackPanelStyle" TargetType="StackPanel">
         <Setter Property="VerticalAlignment" Value="Center"/>
-
     </Style>
+     
+
     <Style x:Key="ButtonPanelStyle" TargetType="StackPanel">
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
@@ -140,14 +141,14 @@
 
     <Style x:Key="ListViewStyle" TargetType="ListView">
         <Setter Property="Margin" Value="10"/>
+       
     </Style>
     <Style x:Key="ScrollViewerStyle" TargetType="ScrollViewer">
         <Setter Property="Margin" Value="3"/>
-        <Setter Property="Background" Value="White"/>
     </Style>
     <Style x:Key="InfoStackPanelStyle" TargetType="StackPanel">
         <Setter Property="Margin" Value="5"/>
-        <Setter Property="Background" Value="White"/>
+     
     </Style>
 
     <Style x:Key="PageTitleTextBlockStyle" TargetType="TextBlock">

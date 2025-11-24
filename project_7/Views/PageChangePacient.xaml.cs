@@ -35,6 +35,12 @@ namespace project_7.Views
             VMChange.AddPacient = new Pacient();
         }
 
-     
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (NavigationService.CanGoBack)
+            {
+                NavigationService.GoBack();
+            }
+        }
     }
 }

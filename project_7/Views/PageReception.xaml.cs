@@ -32,10 +32,6 @@ namespace project_7.Views
         }
         private void EditItem_Click(object sender, RoutedEventArgs e)
         {
-        }
-
-        private void DiagnosisBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
         }
     }

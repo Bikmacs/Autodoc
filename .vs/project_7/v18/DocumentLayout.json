@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\styles\\colors\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\styles\\colors\\darktheme.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\addpacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\addpacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\styles\\ui\\formcontrols.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\styles\\ui\\formcontrols.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\regpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\regpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\pagereception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagereception.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\pagereception.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagereception.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\pagechangepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagechangepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\validationrules\\textonlyrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\validationrules\\textonlyrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\validationrules\\phonenumberrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\validationrules\\phonenumberrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\validationrules\\idrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\validationrules\\idrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\viewmodels\\regpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\regpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\models\\appointmentstories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\appointmentstories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\models\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\models\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\addpacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\addpacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\pagechangepacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\pagechangepacient.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\mainpagedoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainpagedoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\styles\\colors\\defaultcolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\styles\\colors\\defaultcolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\views\\mainpagedoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\views\\mainpagedoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|c:\\users\\smele\\onedrive\\desktop\\autodoc\\autodoc\\project_7\\viewmodels\\receptiopagevievmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA8356A-B8C9-46A7-B230-D5CEA7639051}|project_7\\project_7.csproj|solutionrelative:project_7\\viewmodels\\receptiopagevievmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 328,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegPage.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\RegPage.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\RegPage.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\RegPage.xaml",
+              "RelativeToolTip": "project_7\\Views\\RegPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:22:57.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PhoneNumberRule.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ValidationRules\\PhoneNumberRule.cs",
+              "RelativeDocumentMoniker": "project_7\\ValidationRules\\PhoneNumberRule.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ValidationRules\\PhoneNumberRule.cs",
+              "RelativeToolTip": "project_7\\ValidationRules\\PhoneNumberRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:32:26.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ViewModels\\RegPageViewModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\RegPageViewModel.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ViewModels\\RegPageViewModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\RegPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:31:03.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormControls.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Styles\\UI\\FormControls.xaml",
+              "RelativeDocumentMoniker": "project_7\\Styles\\UI\\FormControls.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Styles\\UI\\FormControls.xaml",
+              "RelativeToolTip": "project_7\\Styles\\UI\\FormControls.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T17:22:53.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageReception.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageReception.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageReception.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageReception.xaml",
+              "RelativeToolTip": "project_7\\Views\\PageReception.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:22:37.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddPacient.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\AddPacient.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\AddPacient.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\AddPacient.xaml",
+              "RelativeToolTip": "project_7\\Views\\AddPacient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:13:22.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PageReception.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageReception.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageReception.xaml.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageReception.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\PageReception.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:11:46.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageChangePacient.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageChangePacient.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageChangePacient.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageChangePacient.xaml",
+              "RelativeToolTip": "project_7\\Views\\PageChangePacient.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:20:18.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TextOnlyRule.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ValidationRules\\TextOnlyRule.cs",
+              "RelativeDocumentMoniker": "project_7\\ValidationRules\\TextOnlyRule.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ValidationRules\\TextOnlyRule.cs",
+              "RelativeToolTip": "project_7\\ValidationRules\\TextOnlyRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:06:55.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IdRule.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ValidationRules\\IdRule.cs",
+              "RelativeDocumentMoniker": "project_7\\ValidationRules\\IdRule.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ValidationRules\\IdRule.cs",
+              "RelativeToolTip": "project_7\\ValidationRules\\IdRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:32:54.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PageChangePacient.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageChangePacient.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\PageChangePacient.xaml.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\PageChangePacient.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\PageChangePacient.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:22:35.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddPacient.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\AddPacient.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\AddPacient.xaml.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\AddPacient.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\AddPacient.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:13:22.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pacient.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Models\\Pacient.cs",
+              "RelativeDocumentMoniker": "project_7\\Models\\Pacient.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Models\\Pacient.cs",
+              "RelativeToolTip": "project_7\\Models\\Pacient.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwCMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:50:03.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppointmentStories.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Models\\AppointmentStories.cs",
+              "RelativeDocumentMoniker": "project_7\\Models\\AppointmentStories.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Models\\AppointmentStories.cs",
+              "RelativeToolTip": "project_7\\Models\\AppointmentStories.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:50:02.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "project_7\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Models\\Doctor.cs",
+              "RelativeToolTip": "project_7\\Models\\Doctor.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAqwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:50:03.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:37:39.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "project_7\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:20:10.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:37:49.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "project_7\\Views\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:15:28.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainPageDoctor.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainPageDoctor.xaml",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainPageDoctor.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainPageDoctor.xaml",
+              "RelativeToolTip": "project_7\\Views\\MainPageDoctor.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:09:28.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DefaultColors.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Styles\\Colors\\DefaultColors.xaml",
+              "RelativeDocumentMoniker": "project_7\\Styles\\Colors\\DefaultColors.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Styles\\Colors\\DefaultColors.xaml",
+              "RelativeToolTip": "project_7\\Styles\\Colors\\DefaultColors.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-24T16:28:47.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainPageDoctor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainPageDoctor.xaml.cs",
+              "RelativeDocumentMoniker": "project_7\\Views\\MainPageDoctor.xaml.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Views\\MainPageDoctor.xaml.cs",
+              "RelativeToolTip": "project_7\\Views\\MainPageDoctor.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:37:46.378Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DarkTheme.xaml",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Styles\\Colors\\DarkTheme.xaml",
+              "RelativeDocumentMoniker": "project_7\\Styles\\Colors\\DarkTheme.xaml",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\Styles\\Colors\\DarkTheme.xaml",
+              "RelativeToolTip": "project_7\\Styles\\Colors\\DarkTheme.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T15:59:47.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ReceptioPageVievModel.cs",
+              "DocumentMoniker": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "RelativeDocumentMoniker": "project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "ToolTip": "C:\\Users\\smele\\OneDrive\\Desktop\\AutoDoc\\Autodoc\\project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "RelativeToolTip": "project_7\\ViewModels\\ReceptioPageVievModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T16:31:34.041Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

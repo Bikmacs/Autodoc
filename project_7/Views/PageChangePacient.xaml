@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:project_7.Views"
       xmlns:validators="clr-namespace:project_7.ValidationRules"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="800"
       Title="PageChangePacient"
       Background="{DynamicResource WindowBackground}">
     <Border Background="{DynamicResource WindowBackground}" 
@@ -23,6 +23,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -30,66 +32,97 @@
             </Grid.ColumnDefinitions>
 
             <Label Content="Форма изменения информации о клиенте" Grid.Row="0" Grid.ColumnSpan="2" 
-                       Style="{StaticResource FormTitleLabelStyle}"/>
+                        Style="{StaticResource FormTitleLabelStyle}" Foreground="{DynamicResource FontTitle}" />
 
-            <Label Content="Фамилия:" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-            <TextBox x:Name="LastName" Grid.Row="1" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                <TextBox.Text>
-                    <Binding Path="AddPacient.LastName" UpdateSourceTrigger="PropertyChanged">
-                        <Binding.ValidationRules>
-                            <validators:TextOnlyRule/>
-                        </Binding.ValidationRules>
-                    </Binding>
-                </TextBox.Text>
-            </TextBox>
+            <Label Content="Фамилия:" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <TextBox x:Name="LastNameBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
+                    <TextBox.Text>
+                        <Binding Path="AddPacient.LastName" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:TextOnlyRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl ItemsSource="{Binding ElementName=LastNameBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}" FontSize="10"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
 
-            <Label Content="Имя:" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-            <TextBox x:Name="Name" Grid.Row="2" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                <TextBox.Text>
-                    <Binding Path="AddPacient.Name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
-                        <Binding.ValidationRules>
-                            <validators:TextOnlyRule/>
-                        </Binding.ValidationRules>
-                    </Binding>
-                </TextBox.Text>
-            </TextBox>
+            <Label Content="Имя:" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
+            <StackPanel Grid.Row="2" Grid.Column="1">
+                <TextBox x:Name="NameBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
+                    <TextBox.Text>
+                        <Binding Path="AddPacient.Name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <validators:TextOnlyRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl ItemsSource="{Binding ElementName=NameBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}" FontSize="10"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
 
-            <Label Content="Отчество:" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-            <TextBox x:Name="MiddleName" Grid.Row="3" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                <TextBox.Text>
-                    <Binding Path="AddPacient.MiddleName" UpdateSourceTrigger="PropertyChanged">
-                        <Binding.ValidationRules>
-                            <validators:TextOnlyRule/>
-                        </Binding.ValidationRules>
-                    </Binding>
-                </TextBox.Text>
-            </TextBox>
+            <Label Content="Отчество:" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
+            <StackPanel Grid.Row="3" Grid.Column="1">
+                <TextBox x:Name="MiddleNameBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
+                    <TextBox.Text>
+                        <Binding Path="AddPacient.MiddleName" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:TextOnlyRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl ItemsSource="{Binding ElementName=MiddleNameBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}" FontSize="10"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
 
-            <Label Content="День Рождения:" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
+            <Label Content="День Рождения:" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
             <DatePicker x:Name="Birthday" SelectedDate="{Binding AddPacient.Birthday, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                             Grid.Row="4" Grid.Column="1" Style="{StaticResource DatePickerStyle}"/>
 
-            <Label Content="Номер телефона:" Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}"/>
-            <TextBox x:Name="Phone" Grid.Row="5" Grid.Column="1" Style="{StaticResource FormTextBoxStyle}">
-                <TextBox.Text>
-                    <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged">
-                        <Binding.ValidationRules>
-                            <validators:PhoneNumberRule/>
-                        </Binding.ValidationRules>
-                    </Binding>
-                </TextBox.Text>
-            </TextBox>
+            <Label Content="Номер телефона:" Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
+            <StackPanel Grid.Row="5" Grid.Column="1">
+                <TextBox x:Name="PhoneBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
+                    <TextBox.Text>
+                        <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:PhoneNumberRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl ItemsSource="{Binding ElementName=PhoneBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}" FontSize="10"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
 
-            <ItemsControl Grid.Row="6" Grid.Column="1" Foreground="Red" ItemsSource="{Binding ElementName=Phone, Path=(Validation.Errors)}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
 
-            <Button Grid.Column="1" Grid.Row="7" Content=" Изменить" Command="{Binding ChangePacBack}" Style="{StaticResource AddButton}"/>
-            <Button Grid.Column="0" Grid.Row="7" Content="Сбросить" Style="{StaticResource DeleteButton}" Click="Button_Click_Reset"/>
+            <Button Grid.Column="1" Grid.Row="7" Content="Изменить" Command="{Binding ChangePacBack}" Style="{DynamicResource MaterialDesignRaisedButton}"  Background="{DynamicResource ButtonBackground}"/>
+            <Button Grid.Column="0" Grid.Row="7" Content="Сбросить" Style="{DynamicResource MaterialDesignRaisedButton}" Click="Button_Click_Reset" Background="{DynamicResource ButtonDanger}"/>
+            <Button Content="Назад" Grid.Row="8" Grid.Column="0"  Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}" Click="Button_Click"/>
+
         </Grid>
     </Border>
 </Page>

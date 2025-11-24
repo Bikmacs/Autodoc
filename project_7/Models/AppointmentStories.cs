@@ -52,7 +52,7 @@ namespace project_7.Models
             }
         }
 
-        private string? _doctorLastName;
+        private string? _doctorLastName = " ";
         public string? DoctorLastName
         {
             get => _doctorLastName;
@@ -66,7 +66,7 @@ namespace project_7.Models
             }
         }
 
-        private string? _diagnosis;
+        private string? _diagnosis = " ";
         public string? Diagnosis
         {
             get => _diagnosis;
@@ -80,7 +80,7 @@ namespace project_7.Models
             }
         }
 
-        private string? _recomendations;
+        private string? _recomendations = string.Empty;
         public string? Recomendations
         {
             get => _recomendations;

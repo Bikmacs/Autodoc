@@ -20,61 +20,99 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Форма добавления пациента" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource FormTitleLabelStyle}"/>
+        <Label Content="Форма добавления пациента" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource FormTitleLabelStyle}" Foreground="{DynamicResource FontTitle}"/>
 
-        <StackPanel Grid.Row="1" Style="{StaticResource LabelStackPanelStyle}">
-            <Label Content="Имя" Style="{StaticResource LabelStyle}"/>
-            <Label Content="Фамилия" Style="{StaticResource LabelStyle}"/>
-            <Label Content="Отчество" Style="{StaticResource LabelStyle}"/>
-            <Label Content="Специализация" Style="{StaticResource LabelStyle}"/>
-            <Label Content="Пароль" Style="{StaticResource LabelStyle}"/>
-            <Label Content="Подтверждение" Style="{StaticResource LabelStyle}"/>
-            <Label Content="Идентификатор" Style="{StaticResource LabelStyle}"/>
+        <StackPanel Grid.Row="1">
+            <Label Content="Имя" Style="{StaticResource LabelStyle}"  Foreground="{DynamicResource FontColor}"/>
+            <Label Content="Фамилия" Style="{StaticResource LabelStyle}"  Foreground="{DynamicResource FontColor}"/>
+            <Label Content="Отчество" Style="{StaticResource LabelStyle}"  Foreground="{DynamicResource FontColor}"/>
+            <Label Content="Специализация" Style="{StaticResource LabelStyle}"  Foreground="{DynamicResource FontColor}"/>
+            <Label Content="Пароль" Style="{StaticResource LabelStyle}"  Foreground="{DynamicResource FontColor}"/>
+            <Label Content="Подтверждение" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}"/>
+            <Label Content="Идентификатор" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="1" Style="{StaticResource ControlsStackPanelStyle}">
-            <TextBox Style="{StaticResource FormTextBoxStyle}">
+
+            <TextBox x:Name="NameBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
-                    <Binding Path="RegisterDoctors.Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding Path="RegisterDoctors.Name" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
                             <validators:TextOnlyRule/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>
             </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=NameBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
 
-            <TextBox Style="{StaticResource FormTextBoxStyle}">
+            
+            <TextBox x:Name="LastNameBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
-                    <Binding Path="RegisterDoctors.LastName" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding Path="RegisterDoctors.LastName" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
                             <validators:TextOnlyRule/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>
             </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=LastNameBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
 
-            <TextBox Style="{StaticResource FormTextBoxStyle}">
+            <TextBox x:Name="MiddleNameBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
-                    <Binding Path="RegisterDoctors.MiddleName" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding Path="RegisterDoctors.MiddleName" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
                             <validators:TextOnlyRule/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>
             </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=MiddleNameBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
 
-            <TextBox Text="{Binding RegisterDoctors.Specialisation}" Style="{StaticResource FormTextBoxStyle}"/>
-            <PasswordBox PasswordChanged="PasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}"/>
-            <PasswordBox PasswordChanged="ConfirmPasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}"/>
+            <TextBox x:Name="SpecBox" Style="{StaticResource FormTextBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
+                <TextBox.Text>
+                    <Binding Path="RegisterDoctors.Specialisation" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:TextOnlyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=SpecBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <PasswordBox PasswordChanged="PasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}"/>
+            <PasswordBox PasswordChanged="ConfirmPasswordBox_PasswordChanged" Style="{StaticResource FormPasswordBoxStyle}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}"/>
+
             <Label Content="{Binding RegisterDoctors.Id}" Style="{StaticResource LabelStyle}"/>
         </StackPanel>
+        <Button Content="Войти" Grid.Column="1" Grid.Row="2" Click="Button_Login" Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}"/>
+        <Button Content="Зарегистрироваться" Grid.Column="0" Grid.Row="2" Click="Button_Register" Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}"/>
 
 
 
 
-        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource ButtonPanelStyle}" Orientation="Horizontal">
-            <Button Content="Зарегистрироваться" Click="Button_Register" Style="{StaticResource AddButton}"/>
-            <Button Content="Войти" Click="Button_Login"  Style="{StaticResource StandardButton}"/>
-        </StackPanel>
     </Grid>
 </Page>

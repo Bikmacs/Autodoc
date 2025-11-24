@@ -12,12 +12,12 @@
     <Grid Style="{StaticResource FormGridStyle}">
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -25,9 +25,9 @@
             <ColumnDefinition Width="175"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Имя" Style="{StaticResource LabelStyle}" Grid.Row="1"/>
+        <Label Content="Имя" Style="{StaticResource LabelStyle}" Grid.Row="1" Foreground="{DynamicResource FontColor}" />
         <StackPanel Grid.Row="1" Grid.Column="1" Style="{StaticResource FormStackPanelStyle2}">
-            <TextBox x:Name="AddName" Style="{StaticResource FormTextBoxStyle2}" >
+            <TextBox x:Name="AddName" Style="{StaticResource FormTextBoxStyle2}" Background="{DynamicResource pole}" Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
                     <Binding Path="AddPacient.Name" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay" >
                         <Binding.ValidationRules>
@@ -36,18 +36,18 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl ItemsSource="{Binding ElementName=AddName, Path=(Validation.Errors)}" Foreground="Red" FontSize="10">
+            <ItemsControl ItemsSource="{Binding ElementName=AddName, Path=(Validation.Errors)}" Foreground="{DynamicResource Error}" FontSize="10">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding ErrorContent}" />
+                        <TextBlock Text="{Binding ErrorContent}"  Foreground="{DynamicResource FontColor}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </StackPanel>
 
-        <Label Content="Фамилия" Grid.Row="2" Style="{StaticResource LabelStyle}"/>
+        <Label Content="Фамилия" Grid.Row="2" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
         <StackPanel Grid.Column="1" Grid.Row="2" Style="{StaticResource FormStackPanelStyle2}">
-            <TextBox x:Name="AddLastName" Style="{StaticResource FormTextBoxStyle2}" >
+            <TextBox x:Name="AddLastName" Style="{StaticResource FormTextBoxStyle2}" Background="{DynamicResource pole}"  Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
                     <Binding Path="AddPacient.LastName" UpdateSourceTrigger="PropertyChanged" >
                         <Binding.ValidationRules>
@@ -56,7 +56,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl ItemsSource="{Binding ElementName=AddLastName, Path=(Validation.Errors)}" Foreground="Red" FontSize="10">
+            <ItemsControl ItemsSource="{Binding ElementName=AddLastName, Path=(Validation.Errors)}" Foreground="{DynamicResource Error}" FontSize="10">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
@@ -65,9 +65,9 @@
             </ItemsControl>
         </StackPanel>
 
-        <Label Content="Отчество" Grid.Row="3" Style="{StaticResource LabelStyle}"/>
+        <Label Content="Отчество" Grid.Row="3" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
         <StackPanel Grid.Column="1" Grid.Row="3" Style="{StaticResource FormStackPanelStyle2}">
-            <TextBox x:Name="AddMiddleName" Style="{StaticResource FormTextBoxStyle2}">
+            <TextBox x:Name="AddMiddleName" Style="{StaticResource FormTextBoxStyle2}" Background="{DynamicResource pole}"  Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
                     <Binding Path="AddPacient.MiddleName" UpdateSourceTrigger="PropertyChanged" >
                         <Binding.ValidationRules>
@@ -76,7 +76,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl ItemsSource="{Binding ElementName=AddMiddleName, Path=(Validation.Errors)}" Foreground="Red" FontSize="10">
+            <ItemsControl ItemsSource="{Binding ElementName=AddMiddleName, Path=(Validation.Errors)}" Foreground="{DynamicResource Error}" FontSize="10">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding ErrorContent}"/>
@@ -85,13 +85,13 @@
             </ItemsControl>
         </StackPanel>
 
-        <Label Content="День Рождения" Grid.Row="4" Style="{StaticResource LabelStyle}"/>
+        <Label Content="День Рождения" Grid.Row="4" Style="{StaticResource LabelStyle}" Foreground="{DynamicResource FontColor}" />
         <DatePicker SelectedDate="{Binding AddPacient.Birthday, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                    Grid.Row="4" Grid.Column="1" Style="{StaticResource DatePickerStyle}" />
+                    Grid.Row="4" Grid.Column="1" Style="{StaticResource DatePickerStyle}"  />
 
-        <Label Content="Номер телефона:" Style="{StaticResource LabelStyle}" Grid.Row="5"/>
+        <Label Content="Номер телефона:" Style="{StaticResource LabelStyle}" Grid.Row="5" Foreground="{DynamicResource FontColor}" />
         <StackPanel Grid.Column="1" Grid.Row="5" Style="{StaticResource FormStackPanelStyle2}">
-            <TextBox x:Name="NumberPhone" Style="{StaticResource FormTextBoxStyle2}" >
+            <TextBox x:Name="NumberPhone" Style="{StaticResource FormTextBoxStyle2}" Background="{DynamicResource pole}"  Foreground="{DynamicResource FontColor}">
                 <TextBox.Text>
                     <Binding Path="AddPacient.PhoneNumber" UpdateSourceTrigger="PropertyChanged" >
                         <Binding.ValidationRules>
@@ -100,7 +100,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl ItemsSource="{Binding ElementName=NumberPhone, Path=(Validation.Errors)}" Foreground="Red">
+            <ItemsControl ItemsSource="{Binding ElementName=NumberPhone, Path=(Validation.Errors)}" Foreground="{DynamicResource Error}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
@@ -111,9 +111,10 @@
 
         <Button Content="Добавить" Grid.Row="6" Grid.Column="0" 
                 Style="{DynamicResource MaterialDesignRaisedButton}" 
-                Command="{Binding AddPacientViewCommand}"/>
+                Command="{Binding AddPacientViewCommand}"
+                Background="{DynamicResource ButtonBackground}"/>
 
-        <Button Content="Назад" Grid.Row="6" Grid.Column="1" Command="{Binding Back}" Style="{DynamicResource MaterialDesignRaisedButton}" />
+        <Button Content="Назад" Grid.Row="6" Grid.Column="1" Command="{Binding Back}" Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}"/>
 
     </Grid>
 </Page>

@@ -10,7 +10,7 @@ namespace project_7.ValidationRules
 
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
-            var input = (value ?? "").ToString().Trim();
+            var input = (value ?? "").ToString()!.Trim();
 
             if (string.IsNullOrEmpty(input))
             {

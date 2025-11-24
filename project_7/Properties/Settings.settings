@@ -5,5 +5,8 @@
     <Setting Name="ThemePath" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="BaseTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Light</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

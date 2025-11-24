@@ -34,5 +34,17 @@ namespace project_7.Properties {
                 this["ThemePath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Light")]
+        public string BaseTheme {
+            get {
+                return ((string)(this["BaseTheme"]));
+            }
+            set {
+                this["BaseTheme"] = value;
+            }
+        }
     }
 }

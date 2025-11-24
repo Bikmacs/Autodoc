@@ -21,19 +21,19 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Button Content="Изменить" Grid.Column="0" Grid.Row="0" Command="{Binding SavePacientCommand}" Style="{StaticResource AddButton}"/>
-        <Button Content="Назад" Grid.Column="1" Grid.Row="0" Command="{Binding Back}" Style="{StaticResource StandardButton}"/>
+        <Button Content="Изменить" Grid.Column="0" Grid.Row="0" Command="{Binding SavePacientCommand}" Style="{DynamicResource MaterialDesignRaisedButton}"  Background="{DynamicResource ButtonBackground}"/>
+        <Button Content="Назад" Grid.Column="1" Grid.Row="0" Command="{Binding Back}" Style="{DynamicResource MaterialDesignRaisedButton}"  Background="{DynamicResource ButtonBackground}"/>
 
-        <ListView Grid.Row="1" Grid.Column="1" Style="{StaticResource ListViewStyle}" ItemsSource="{Binding AppoinmentHistory}">
+        <ListView Grid.Row="1" Grid.Column="1" Style="{StaticResource ListViewStyle}" ItemsSource="{Binding AppoinmentHistory}"  Background="{DynamicResource List}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="5">
-                        <TextBlock Text="{Binding Date, StringFormat='Дата приёма: dd.MM.yyyy HH:mm'}" Style="{StaticResource TextBlockStyle}"/>
-                        <TextBlock Text="{Binding DoctorId, StringFormat='ID доктора: {0}'}" Style="{StaticResource TextBlockStyle}"/>
-                        <TextBlock Text="{Binding Diagnosis, StringFormat='Диагноз: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}"/>
-                        <TextBlock Text="{Binding Recomendations, StringFormat='Рекомендации: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}"/>
-                        <TextBlock Text="{Binding DoctorLastName, StringFormat='Фамилия доктора: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}"/>
-                        <TextBlock Text="{Binding DoctorName, StringFormat='Имя доктора: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="{Binding Date, StringFormat='Дата приёма: dd.MM.yyyy HH:mm'}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                        <TextBlock Text="{Binding DoctorId, StringFormat='ID доктора: {0}'}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                        <TextBlock Text="{Binding Diagnosis, StringFormat='Диагноз: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                        <TextBlock Text="{Binding Recomendations, StringFormat='Рекомендации: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                        <TextBlock Text="{Binding DoctorLastName, StringFormat='Фамилия доктора: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                        <TextBlock Text="{Binding DoctorName, StringFormat='Имя доктора: {0}'}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -42,39 +42,42 @@
         <Border BorderBrush="{DynamicResource ButtonBorder}" Style="{StaticResource PageBorderInfo}" 
     Grid.Row="1" Grid.Column="0">
 
-            <ScrollViewer VerticalScrollBarVisibility="Auto" Style="{StaticResource ScrollViewerStyle}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Style="{StaticResource ScrollViewerStyle}" >
                 <StackPanel Style="{StaticResource FormStackPanelStyle}">
-                    <TextBlock Text="Форма приёма пациента:" Style="{StaticResource FormTitleTextBlockStyle}" FontWeight="Bold"/>
+                    <TextBlock Text="Форма приёма пациента:" Style="{StaticResource FormTitleTextBlockStyle}" Foreground="{DynamicResource FontTitle}"/>
 
-                    <TextBlock Text="Идентификатор:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.Id}" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="Идентификатор:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.Id}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}" />
 
-                    <TextBlock Text="Фамилия:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.LastName}" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="Фамилия:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.LastName}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="Имя:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.Name}" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="Имя:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.Name}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="Отчество:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.MiddleName}" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="Отчество:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.MiddleName}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="День Рождения:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.Birthday}" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="День Рождения:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.Birthday}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="Возраст:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.AgeFormat}" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="Возраст:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.AgeFormat}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="Номер телефона:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.PhoneNumber, StringFormat={}{0:### ### ## ##} }" Style="{StaticResource TextBlockStyles4}"/>
+                    <TextBlock Text="Номер телефона:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.PhoneNumber, StringFormat={}{0:# ### ### ## ##}}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="Последний раз:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBlock Text="{Binding CurrentPatient.DaysSinceLastAppointment}" Style="{StaticResource TextBlockStyles4}"/>
-                    
-                    <TextBlock Text="Последний Доктор:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBox Text="{Binding Appointment.DoctorId, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource SmallTextBoxStyle}"/>
+                    <TextBlock Text="Последний раз:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBlock Text="{Binding CurrentPatient.DaysSinceLastAppointment}" Style="{StaticResource TextBlockStyles4}" Foreground="{DynamicResource FontColor}"/>
 
-                    <TextBlock Text="Диагноз:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBox x:Name="DiagnosisBox" TextWrapping="Wrap" AcceptsReturn="True" TextChanged="DiagnosisBox_TextChanged">
+                    <TextBlock Text="Последний Доктор:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBox Text="{Binding Appointment.DoctorId, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource SmallTextBoxStyle}" Foreground="{DynamicResource FontColor}" Background="{DynamicResource pole}"/>
+
+                    <TextBlock Text="Диагноз:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBox x:Name="DiagnosisBox" 
+                             Style="{StaticResource LargeTextBoxStyle}"
+                             Background="{DynamicResource pole}" 
+                             Foreground="{DynamicResource FontColor}">
                         <TextBox.Text>
                             <Binding Path="Appointment.Diagnosis" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
@@ -83,16 +86,19 @@
                             </Binding>
                         </TextBox.Text>
                     </TextBox>
-                    <ItemsControl ItemsSource="{Binding ElementName=DiagnosisBox, Path=(Validation.Errors)}" Foreground="Red">
+                    <ItemsControl ItemsSource="{Binding ElementName=DiagnosisBox, Path=(Validation.Errors)}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}"/>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
 
-                    <TextBlock Text="Рекомендации:" Style="{StaticResource TextBlockStyles2}"/>
-                    <TextBox x:Name="RecomendationsBox" >
+                    <TextBlock Text="Рекомендации:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                    <TextBox x:Name="RecomendationsBox" 
+                             Style="{StaticResource LargeTextBoxStyle}"
+                             Background="{DynamicResource pole}" 
+                             Foreground="{DynamicResource FontColor}" >
                         <TextBox.Text>
                             <Binding Path="Appointment.Recomendations" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
@@ -101,14 +107,13 @@
                             </Binding>
                         </TextBox.Text>
                     </TextBox>
-                    <ItemsControl ItemsSource="{Binding ElementName=RecomendationsBox, Path=(Validation.Errors)}" Foreground="Red">
+                    <ItemsControl ItemsSource="{Binding ElementName=RecomendationsBox, Path=(Validation.Errors)}" Foreground="{DynamicResource Error}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap" Foreground="{DynamicResource Error}"/>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
-
                 </StackPanel>
             </ScrollViewer>
         </Border>

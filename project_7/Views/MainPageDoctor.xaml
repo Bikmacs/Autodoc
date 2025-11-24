@@ -22,16 +22,14 @@
 
         <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource ButtonStackPanelStyle}"
                     Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Command="{Binding AddPacientCommand}" Content="Создать" Style="{DynamicResource AddButton}" Margin="10,0"/>
-            <Button Command="{Binding StartReceptionCommand}" Content="Начать приём" Style="{StaticResource StandardButton}" Margin="10,0"/>
-            <Button Command="{Binding EditPacientCommand}" Content="Изменить информацию" Style="{StaticResource StandardButton}" Margin="10,0"/>
+            <Button Command="{Binding AddPacientCommand}" Content="Создать" Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}"/>
+            <Button Command="{Binding StartReceptionCommand}" Content="Начать приём" Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}"/>
+            <Button Command="{Binding EditPacientCommand}" Content="Изменить информацию" Style="{DynamicResource MaterialDesignRaisedButton}" Background="{DynamicResource ButtonBackground}"/>
         </StackPanel>
 
         <Border BorderBrush="{DynamicResource ButtonBorder}" 
                 Style="{StaticResource PageBorderInfo}"
-
                 Grid.Row="1" Grid.Column="0">
-
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="140"/>
@@ -48,62 +46,60 @@
 
                 <TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
                            Text="Информация о текущем пользователе:" 
-                           Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10"/>
+                           Style="{StaticResource TitleTextBlockStyle}" Foreground="{DynamicResource FontTitle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Идентификатор:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding CurrentDoctor.Id}" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
 
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="Идентификатор:" Style="{StaticResource TextBlockStyles2}" Margin="0,3"/>
-                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding CurrentDoctor.Id}" Style="{StaticResource TextBlockStyles2}" Margin="5,3,0,3"/>
+                <TextBlock Grid.Row="2" Text="Фамилия:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}" HorizontalAlignment="Center" Width="140"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding CurrentDoctor.LastName}" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}" />
 
-                <TextBlock Grid.Row="2" Grid.Column="0" Text="Фамилия:" Style="{StaticResource TextBlockStyles2}" Margin="0,3"/>
-                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding CurrentDoctor.LastName}" Style="{StaticResource TextBlockStyles2}" Margin="5,3,0,3"/>
+                <TextBlock Grid.Row="3" Text="Имя:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding CurrentDoctor.Name}" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}" />
 
-                <TextBlock Grid.Row="3" Grid.Column="0" Text="Имя:" Style="{StaticResource TextBlockStyles2}" Margin="0,3"/>
-                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding CurrentDoctor.Name}" Style="{StaticResource TextBlockStyles2}" Margin="5,3,0,3"/>
+                <TextBlock Grid.Row="4" Text="Отчество:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding CurrentDoctor.MiddleName}" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}"/>
 
-                <TextBlock Grid.Row="4" Grid.Column="0" Text="Отчество:" Style="{StaticResource TextBlockStyles2}" Margin="0,3"/>
-                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding CurrentDoctor.MiddleName}" Style="{StaticResource TextBlockStyles2}" Margin="5,3,0,3"/>
-
-                <TextBlock Grid.Row="5" Grid.Column="0" Text="Специализация:" Style="{StaticResource TextBlockStyles2}" Margin="0,3"/>
-                <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding CurrentDoctor.Specialisation}" Style="{StaticResource TextBlockStyles2}" Margin="5,3,0,3"/>
+                <TextBlock Grid.Row="5" Text="Специализация:" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}" />
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding CurrentDoctor.Specialisation}" Style="{StaticResource TextBlockStyles2}" Foreground="{DynamicResource FontColor}" Margin="0,18,0,0" Grid.RowSpan="2" Width="148" />
             </Grid>
         </Border>
 
-        <ListView Grid.Row="1" Grid.Column="1" Margin="10"
+        <ListView Grid.Row="1" Grid.Column="1"
                   ItemsSource="{Binding PacientList, Mode=TwoWay}"
                   SelectedItem="{Binding SelectedPacient, Mode=TwoWay}"
                   MouseDoubleClick="EditItem_Click"
-                  Style="{StaticResource ListViewStyle}">
+                  Style="{StaticResource ListViewStyle}"
+                  Background="{DynamicResource List}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Идентификатор: " Style="{StaticResource TextBlockStyle}"/>
-                            <TextBlock Text="{Binding Id}" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="Идентификатор: " Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}" />
+                            <TextBlock Text="{Binding Id}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Имя: " Style="{StaticResource TextBlockStyle}"/>
-                            <TextBlock Text="{Binding Name}" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="Имя: " Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}" />
+                            <TextBlock Text="{Binding Name}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Фамилия: " Style="{StaticResource TextBlockStyle}"/>
-                            <TextBlock Text="{Binding LastName}" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="Фамилия: " Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                            <TextBlock Text="{Binding LastName}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Отчество: " Style="{StaticResource TextBlockStyle}"/>
-                            <TextBlock Text="{Binding MiddleName}" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="Отчество: " Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                            <TextBlock Text="{Binding MiddleName}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="День рождение: " Style="{StaticResource TextBlockStyle}"/>
-                            <TextBlock Text="{Binding Birthday, StringFormat='dd.MM.yyyy'}" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="День рождение: " Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                            <TextBlock Text="{Binding Birthday, StringFormat='dd.MM.yyyy'}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Номер телефона:" Style="{StaticResource TextBlockStyle}"/>
-                            <TextBlock Text="{Binding PhoneNumber, StringFormat={}{0:### ### ## ##}, Mode=TwoWay}" Style="{StaticResource TextBlockStyle}"/>
+                            <TextBlock Text="Номер телефона:" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
+                            <TextBlock Text="{Binding PhoneNumber, StringFormat={}{0:### ### ## ##}, Mode=TwoWay}" Style="{StaticResource TextBlockStyle}" Foreground="{DynamicResource FontColor}"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-      
     </Grid>
 </Page>
